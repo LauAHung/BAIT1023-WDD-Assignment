@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout-car_step2.css">
+</head>
+
+<body>
+    <h1 class="main_title">Review and Pay</h1>
+    <div class="main-content">
+        <div id="cartItems" class="cart-items">
+            <h1>Package Details</h1><br><br>
+            <div id="packageDetails"></div>
+        </div>
+        <div id="details" class="details">
+            <h1 class="summary">Order Summary</h1>
+            <h2 class="summary_title">User Checkout</h2>
+            <div id="userDetails"></div>
+            <h2 class="summary_title">Shipping Address</h2>
+            <div id="shippingDetails"></div>
+            <hr>
+            <div id="summaryDetails"></div>
+            <div class="button-container">
+                <button type="button" id="card" class="uniform-button secondary-button">Debit/Credit Card</button>
+                <button type="button" id="ewallet" class="uniform-button secondary-button">E-wallet</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="car_checkout.js"></script>
+    <script src="car_summary.js"></script>
+    <script src="checkout.js"></script>
+    <script src="../order_car.js"></script>
+
+    
+</body>
+
+</html>

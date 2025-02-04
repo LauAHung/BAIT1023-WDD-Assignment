@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link href="feedback.css" rel="stylesheet">
+	<link rel="stylesheet" href="navigation_black.css">
+	<script src="Reg_Log_page/app.js"></script>
+	<title>Form Reviews</title>
+	<link rel="stylesheet" href="feedback_black.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<a class="logo" href="index.html"><img src="pictures/logo_black.svg" height="50px " /></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a class="nav-link" href="categories.html">Categories</a></li>
+				<li><a class="nav-link" href="aboutus.html">Discover</a></li>
+				<li><a class="nav-link" href="shop_new.html">Shop</a></li>
+				<li><a class="nav-link" href="feedback.html">Feedback</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<ul>
+				<li><a class="nav-link" href="cart.html">Cart</a></li>
+				<li><a class="nav-link" href="Reg_Log_page/account.html">Account</a></li>
+			</ul>
+		</nav>
+		<div class="nav-animate"></div>
+	</header>
+
+	<div class="wrapper">
+		<h3>Rate us ! </h3>
+		<form action="#">
+			<div class="rating" id="rating1">
+				<input type="number" name="rating1" hidden>
+				<i class='bx bx-star star' name="star1" style="--i: 0;"></i>
+				<i class='bx bx-star star' name="star2" style="--i: 1;"></i>
+				<i class='bx bx-star star' name="star3" style="--i: 2;"></i>
+				<i class='bx bx-star star' name="star4" style="--i: 3;"></i>
+				<i class='bx bx-star star' name="star5" style="--i: 4;"></i>
+			</div>
+			<p style="font-family: 'Courier New', Courier ;">User Experience: <span id="selected-rating">-</span> / 5
+			</p>
+			<div class="rating2" id="rating2" style="margin-top: 5px;">
+				<input type="number" name="rating2" hidden>
+				<i class='bx bx-star star' name="star1" style="--i: 0;"></i>
+				<i class='bx bx-star star' name="star2" style="--i: 1;"></i>
+				<i class='bx bx-star star' name="star3" style="--i: 2;"></i>
+				<i class='bx bx-star star' name="star4" style="--i: 3;"></i>
+				<i class='bx bx-star star' name="star5" style="--i: 4;"></i>
+			</div>
+			<p style="font-family: 'Courier New', Courier ;">Customer Sevice : <span id="selected-rating2">-</span> / 5
+			</p>
+
+			<textarea style="margin-top: 15px;" id="opinion" name="opinion" cols="30" rows="10"
+				placeholder="Your opinion..."></textarea>
+			<div class="btn-group">
+				<button type="button" id="submitBtn" class="btn submit">Submit</button>
+				<button class="btn cancel">Cancel</button>
+			</div>
+			<br>
+			<hr>
+			<h1 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: white;
+	font-family: 'Courier New', Courier; margin-top: 20px;"> Other users said....</h1>
+			<div class="review-container">
+				<div class="review-box">
+					<img src="pictures/Feedback/avatar-icon.png" alt="avatar" width="100px" height="100px"
+						style="border-radius: 100%;">
+					<div class="review-text">
+						<h4>MR. Gorgeous</h4>
+						<img src="pictures/Feedback/star128.png" alt="star" width="10px" height="10px"
+							style="background: transparent; margin-top: 5px;">
+						<span>4.5</span>
+						<br>
+						<P> This website helped me a lot when I faced some difficult to buy myself a new car. This UI is
+							also convinient to use!! </P>
+					</div>
+				</div>
+			</div>
+			<div class="review-container">
+				<div class="review-box">
+					<img src="pictures/Feedback/avatar-icon.png" alt="avatar" width="100px" height="100px"
+						style="border-radius: 100%;">
+					<div class="review-text">
+						<h4>MR. Handsome</h4>
+						<img src="pictures/Feedback/star128.png" alt="star" width="10px" height="10px"
+							style="background: transparent; margin-top: 5px;">
+						<span>5.0</span>
+						<br>
+						<P> Good </P>
+					</div>
+				</div>
+			</div>
+			<div id="myFeedback">
+				<template id="feedbackTemplate">
+					<div class="review-container">
+						<div class="review-box">
+							<img src="pictures/Feedback/avatar-icon.png" alt="avatar" width="100px" height="100px"
+								style="border-radius: 100%;">
+							<div class="review-text">
+								<h4 class="feedbackUsername"></h4>
+								<img src="pictures/Feedback/star128.png" alt="star" width="10px" height="10px"
+									style="background: transparent; margin-top: 5px;">
+								<span class="averageRate"></span>
+								<br>
+								<div class="output"></div>
+							</div>
+						</div>
+					</div>
+				</template>
+			</div>
+		</form>
+
+	</div>
+
+	<footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="pictures/logo_black.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="https://www.facebook.com/home.php"><img src="pictures/sosial_media_logo/facebook.png" height="45px"></a>
+                    <a href="https://www.instagram.com/"><img src="pictures/sosial_media_logo/instagram.webp" height="45px"></a>
+                    <a href="https://www.linkedin.com/"><img src="pictures/sosial_media_logo/linkedin.png" height="45px"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="pictures/sosial_media_logo/x.png" height="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="pictures/sosial_media_logo/whatsapp.png" height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>Car Brands</h4>
+                        <ul>
+                            <li><a href="xiaomi.html">Xiaomi</a></li>
+                            <li><a href="tesla.html">Tesla</a></li>
+                            <li><a href="honda.html">Honda</a></li>
+                            <li><a href="toyota.html">Toyota</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="Reg_Log_page/account.html">Account</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+
+                        <div class="subscribe">
+                            <form id="subscribeForm">
+                                <input type="text" name="email" placeholder="Email" style="padding-top: 0; padding-bottom: 0;">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+	<script src="subscibe.js"></script>
+	<script src="navigation.js"></script>
+	<script src="feedback.js"></script>
+</body>
+
+</html>

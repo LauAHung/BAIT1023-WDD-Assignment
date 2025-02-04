@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota Corolla Cross</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="order_car.css">
+    <link rel="stylesheet" href="../footer_white.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+
+    </header>
+
+    <body>
+        <div class="car_container">
+
+            <div class="car_image_section">
+                <div class="car_image">
+                    <img src="../pictures/toyota_car_1.png" id="image_toyota_car_1">
+                </div>
+                <div class="product-thumbnails"></div>
+            </div>
+
+            
+            <div class="car_info">
+                <div class="info">
+                    <div class="car_title" id="title_toyota">Toyota Corolla Cross</div>
+                    <div class="car_package" onclick="selectPackage(1)" id="package1">
+                        <div class="package_name">
+                            Hybrid Electric
+                            <div class="package_price">
+                                RM 143,000
+                            </div>
+                        </div>
+                        <div class="package_detail">
+                            <p><strong>36 L</strong> Fuel Tank Capacity</p>
+                            <p><strong>6.5Ahr</strong> Battery Capacity (3hr)</p>
+                            <p><strong>170 Km/h</strong> Top Speed</p><br>
+                            <small>Antenna with Shark Fin Design <br>
+                                Drive Mode SPORT / ECO / NORMAL / EV<br>
+                                Electrochromic Mirror<br>
+                                Carpet Mat With Hybrid Blue Accents<br></small>
+                        </div>
+                    </div>
+                    <div class="car_package" onclick="selectPackage(2)" id="package2">
+                        <div class="package_name">
+                            1.8V AT
+                            <div class="package_price">
+                                RM 130,900
+                            </div>
+                        </div>
+                        <p><strong>47 L</strong> Fuel Tank Capacity</p>
+                        <p><strong>182 Km/h</strong> Top Speed</p>
+                    </div>
+                    <div class="car_package" onclick="selectPackage(3)" id="package3">
+                        <div class="package_name">
+                            GR Sport
+                            <div class="package_price">
+                                RM 146,000
+                            </div>
+                        </div>
+                        <p><strong>47 L</strong> Fuel Tank Capacity</p>
+                        <p><strong>185 Km/h</strong> Top Speed</p><br>
+                        <small>Radiator Grille with Black Design<br>
+                            Antenna with Shark Fin Design With Black Color & Black Roof
+                            Smart Entry & Start System With GR Logo<br>
+                            Carpet Mat With GR Design<br></small>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <div class="car_order" id="order_toyota">
+            <h3>Order Your Toyota Corolla Cross</h3>
+            <a href="Car_checkout/checkout_car.html"><button class="continue_btn" onclick="storePackage()">Continue</button></a>
+        </div>
+
+        <footer>
+            <div class="footer-upper">
+                <div class="left-content">
+                    <img src="../pictures/logo_transparent.svg" height="80px">
+                    <h1>
+                        CARVISTA
+                    </h1>
+                </div>
+                <div class="right-content">
+                    <div class="mediasocial">
+                        <a href="https://www.facebook.com/home.php"><img src="../pictures/sosial_media_logo/facebook.png"
+                                height="45px"></a>
+                        <a href="https://www.instagram.com/"><img src="../pictures/sosial_media_logo/instagram.webp"
+                                height="45px"></a>
+                        <a href="https://www.linkedin.com/"><img src="../pictures/sosial_media_logo/linkedin.png"
+                                height="45px"></a>
+                        <a href="https://twitter.com/?lang=en"><img src="../pictures/sosial_media_logo/x.png"
+                                height="45px"></a>
+                        <a href="https://web.whatsapp.com/"><img src="../pictures/sosial_media_logo/whatsapp.png"
+                                height="45px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="footer_lower_container">
+                    <div class="footer_lower_row">
+                        <div class="footer_text">
+                            <h4>Car Brands</h4>
+                            <ul>
+                                <li><a href="../xiaomi.html">Xiaomi</a></li>
+                                <li><a href="../tesla.html">Tesla</a></li>
+                                <li><a href="../honda.html">Honda</a></li>
+                                <li><a href="../toyota.html">Toyota</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer_text">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="../aboutus.html">About Us</a></li>
+                                <li><a href="../Reg_Log_page/account.html">Account</a></li>
+                                <li><a href="../feedback.html">Feedback</a></li>
+                                <li><a href="../cart.html">Cart</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer_text">
+                            <h4>Subscribe</h4>
+                            <p>
+                                Don't miss to subscribe to our new feeds!
+                            </p>
+    
+                            <div class="subscribe">
+                                <form id="subscribeForm">
+                                    <input type="text" name="email" placeholder="Email" style="padding-top: 0; padding-bottom: 0;">
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+            <div class="footer-line"></div>
+        </footer>
+
+        <script src="../subscibe.js"></script>
+        <script src="order_car.js"></script>
+        <script src="../navigation.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../navigation_black.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_black.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/login.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+    <div class="login_container">
+        <div class="container">
+            <div class="register">
+                <div class="container">
+                    <a href="/index.html"><img src="../pictures/logo_black.svg" alt="logo" class="logo" width="600px"></a>
+                    <h1>Login</h1>
+                    <p>Doesn't have an account yet? &nbsp;<a href="register.html">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="login">
+                <div class="container" style="margin-top: -60px;">
+                    <form id="loginForm">
+                        <h1 class="main">Welcome Back </h1>
+                        <h1 class="welcome">Welcome back you've been missed! - (˵ •̀ ᴗ - ˵ ) ✧</h1>
+                        <img src="../pictures/Reg_Log/email_icon.svg" alt="Email" id="icon_email">
+                        <input type="email" id="loginEmail" placeholder="Email" maxlength="50" required>
+                        <img src="../pictures/Reg_Log/password_icon.svg" alt="Email" id="icon_password">
+                        <input type="password" id="loginPassword" placeholder="Password" maxlength="25" minlength="8" required>
+                        <a href="#" id="forgotPasswordLink" style="font-size: medium;float: left;">Forgot password?</a>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../navigation.js"></script>
+    <script src="reg_log.js"></script>

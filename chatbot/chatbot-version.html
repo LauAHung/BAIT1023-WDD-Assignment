@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chatbot-version.css">
+    <link rel="icon" type="image/x-icon" href="pictures/logo_white.jpg">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" id="popupLink" style="position:absolute;display: none;">Terms</a>
+        </nav>
+
+        <nav class="nav">
+            <div class="navigation-bar container">
+                <div class="item-left">
+                    <a href="index.html"><img src="pictures/logo_black.svg" height="50px " /></a>
+                </div>
+                <div class="item-center">
+                    <ul class="menu-list">
+                        <li><a href="categories.html">Catogories</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="item-right">
+                    <ul class="menu-list">
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="login_page.html">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-backdrop">
+
+        </nav>
+    </header>
+
+    <!--chatbot-->
+    <button class="chatbot-button">
+        <i class="fas fa-comments">
+            <img src="pictures/chatbot.png" width="50px" height="50px">
+        </i>
+    </button>
+
+    <div class="chatbot-window">
+        <div class="chatbot-header">
+            <h2>Chatbot</h2>
+            <button class="close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="chatbot-message bot">
+                <div class="chatbot-avatar">
+                    <img src="pictures/chatbot.png" width="40px" height="40px">
+                </div>
+                <div class="chatbot-message-content">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button>Send</button>
+        </div>
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+
+    <script>
+        // 在页面加载完成后显示字幕
+        window.onload = function () {
+            var xiaomi_intro = document.getElementById('xiaomi_intro');
+            xiaomi_intro.classList.add('show'); // 添加类以显示字幕
+            setTimeout(function () {
+                var xiaomi_intro_img = document.getElementById('xiaomi_intro_img');
+                xiaomi_intro_img.classList.add('show'); // 添加类以显示图片
+            }, 1000);
+        };
+
+        // Get references to the hyperlink and popup elements
+        var popupLink = document.getElementById('popupLink');
+        var popup = document.getElementById('popup');
+
+        // Add click event listener to the hyperlink
+        popupLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior of hyperlink
+            popup.style.display = 'block'; // Display the popup
+        });
+
+        // Function to close the popup
+        function closePopup() {
+            popup.style.display = 'none'; // Hide the popup
+        }
+
+        // Select all elements with class 'xiaomi_intro_feature'
+        var divs = document.querySelectorAll('.xiaomi_intro_feature');
+
+        // Loop through each div and set the animation delay
+        divs.forEach(function (div, index) {
+            div.style.animationDelay = 2.2 + 's'; // Set animation delay based on index
+        });
+
+        // reveal each section
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('section');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        //chatbot
+        const chatbotButton = document.querySelector('.chatbot-button');
+        const chatbotWindow = document.querySelector('.chatbot-window');
+        const closeButton = document.querySelector('.close-button');
+        const chatMessages = document.querySelector('.chatbot-messages');
+        const chatInput = document.querySelector('.chatbot-input input');
+
+        chatbotButton.addEventListener('click', () => {
+            if (chatbotWindow.style.display === 'flex') {
+                chatbotWindow.classList.add('closing');
+                setTimeout(() => {
+                    chatbotWindow.style.display = 'none';
+                    chatbotWindow.classList.remove('closing');
+                }, 300);
+            } else {
+                chatbotWindow.style.display = 'flex';
+            }
+        });
+
+        closeButton.addEventListener('click', () => {
+            chatbotWindow.classList.add('closing');
+            setTimeout(() => {
+                chatbotWindow.style.display = 'none';
+                chatbotWindow.classList.remove('closing');
+            }, 300);
+        });
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                const userMessage = chatInput.value.trim();
+                if (userMessage) {
+                    displayMessage('user', userMessage);
+                    processUserInput(userMessage);
+                    chatInput.value = '';
+                }
+            }
+        }
+
+        function displayMessage(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('chatbot-message', sender);
+            messageElement.innerHTML = `
+        ${sender === 'bot' ? '<div class="chatbot-avatar"><img src="pictures/chatbot.png" width="40px" height="40px"></div>' : ''}
+        <div class="chatbot-message-content">
+          <p>${message}</p>
+        </div>
+        ${sender === 'user' ? '<div class="user-avatar"><img src="pictures/user_avatar.png" width="37px" height="40px"></div>' : ''}
+      `;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function processUserInput(userInput) {
+            // Implement your chatbot logic here
+            if (userInput.toLowerCase().includes('home') || userInput.toLowerCase().includes('main page')) {
+                const botResponse = "You can click the logo at the upper left corner to jump to the home page.<br><br>or<br><br>Click <a href='index.html' style='color:blue;font-weight:bold;'>Here</a> to go to the home page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('categories') || userInput.toLowerCase().includes('category')) {
+                const botResponse = "Click <a href='index.html' style='color:blue;font-weight:bold;'>Here</a> to go to the categories page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('xiaomi')) {
+                const botResponse = "Click <a href='xiaomi.html' style='color:blue;font-weight:bold;'>Xiaomi_SU7</a> to learn more about xiaomi SU7.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('shop') || userInput.toLowerCase().includes('buy')) {
+                const botResponse = "Click <a href='shop_new.html' style='color:blue;font-weight:bold;'>Here</a> to go to the shop page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('feedback')) {
+                const botResponse = "Click <a href='feedback.html' style='color:blue;font-weight:bold;'>Here</a> to go to the feedback page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('26 birthday') || userInput.toLowerCase().includes('birth') || userInput.toLowerCase().includes('mrbeast')) {
+                const botResponse = "<p>'MrBeast's Birthday Bonanza: 26 Teslas for 26 Lucky Fans - Spreading Joy, One Electric Ride at a Time!'Click <a href='#' style='color:blue;font-weight:bold;'>here</a> to participate lucky draw!!</p><br><img src='pictures/mrbeast.jpg' width='220px' height='165px'>";
+                displayMessage('bot', botResponse);
+            } else {
+                const botResponse = "I'm sorry, I don't understand. Could you please rephrase your question?";
+                displayMessage('bot', botResponse);
+            }
+        }
+
+        //slider
+        let items = document.querySelectorAll('.slider .list .item');
+        let next = document.getElementById('next');
+        let prev = document.getElementById('prev');
+        let thumbnails = document.querySelectorAll('.thumbnail .item');
+
+        // config param
+        let countItem = items.length;
+        let itemActive = 0;
+        // event next click
+        next.onclick = function () {
+            itemActive = itemActive + 1;
+            if (itemActive >= countItem) {
+                itemActive = 0;
+            }
+            showSlider();
+        }
+        //event prev click
+        prev.onclick = function () {
+            itemActive = itemActive - 1;
+            if (itemActive < 0) {
+                itemActive = countItem - 1;
+            }
+            showSlider();
+        }
+        // auto run slider
+        let refreshInterval = setInterval(() => {
+            next.click();
+        }, 5000)
+        function showSlider() {
+            // remove item active old
+            let itemActiveOld = document.querySelector('.slider .list .item.active');
+            let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
+            itemActiveOld.classList.remove('active');
+            thumbnailActiveOld.classList.remove('active');
+
+            // active new item
+            items[itemActive].classList.add('active');
+            thumbnails[itemActive].classList.add('active');
+
+            // clear auto time run slider
+            clearInterval(refreshInterval);
+            refreshInterval = setInterval(() => {
+                next.click();
+            }, 5000)
+        }
+
+        // click thumbnail
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                itemActive = index;
+                showSlider();
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

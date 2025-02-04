@@ -1,0 +1,579 @@
+@font-face {
+    font-family: 'Ploni';
+    src: url("../font/PloniRegular.woff") format('woff');
+}
+
+@import url("https://fonts.cdnfonts.com/css/gotham");
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-description {
+        margin: 10px 0;
+        padding-right: 0;
+    }
+
+    tbody td {
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: 'Ploni', sans-serif;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+    top: 0;
+    padding: 1rem;
+    font-weight: bold;
+    z-index: 100;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "Gotham", sans-serif;
+}
+
+header.sticking {
+    color: rgb(var(--black));
+    backdrop-filter: blur(10px);
+}
+
+header a,
+.nav-animate {
+    border-radius: 5px;
+    transition: all 300ms;
+}
+
+.nav-animate {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    z-index: -1;
+}
+
+header a:hover,
+.nav-animate:hover {
+    color: rgb(255, 255, 255);
+}
+
+header> :first-child {
+    margin-top: 10px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+header> :nth-child(3) {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: end;
+}
+
+header nav ul {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li * {
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+
+
+.container {
+    background-color: #ffffff;
+}
+
+input {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    text-align: center;
+    font-size: 23px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    color: #202030;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button {
+    color: #33008b;
+    background-color: #ffffff;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.product_description {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+}
+
+.description_text {
+    padding-left: 15%;
+
+}
+
+.product_description>img {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.description_text>.des_title {
+    font-size: 30px;
+}
+
+
+.des_text {
+    float: right;
+    padding-right: 25%;
+}
+
+.product_description_2>img {
+    padding-top: 10%;
+}
+
+.product_description_3>img {
+    padding-top: 3%;
+}
+
+.product_description_4>img {
+    padding-top: 10%;
+}
+
+
+h2.title4,
+h2.title3,
+h2.title2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+p.text1 {
+    font-size: 20px;
+}
+
+p.text4,
+p.text3,
+p.text2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+p.text4_1,
+p.text3_1 {
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+    color: #777;
+}
+
+/* The rest */
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.product-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 100px
+}
+
+.product-image {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px rgb(165, 165, 165) solid;
+    border-radius: 30px;
+}
+
+.product-thumbnails img {
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.product-thumbnails img:hover {
+    border-color: #333;
+    border-radius: 15px;
+}
+
+.product_info {
+    flex: 1;
+    padding-left: 80px;
+}
+
+h2.title {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.product-title {
+    font-size: 45px;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.price {
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+p.quantity {
+    font-size: 17px;
+}
+
+.product-description {
+    margin: 10px 0;
+    padding-right: 150px;
+}
+
+.quantity {
+    margin-bottom: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #777;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.add_cart_btn_product4,
+.add_cart_btn_product3,
+.add_cart_btn_product2,
+.add_cart_btn {
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 8px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.product-thumbnails img {
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+.product-thumbnails img:hover {
+    border-color: #333;
+}
+
+.promo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.promo {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.promo_text {
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+/*POP-OUT*/
+
+
+
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px;
+    height: 50%;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.modal-content_cart {
+    background-color: #fefefe;
+    margin: 9% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px;
+    height: 60%;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-content_cart img {
+    padding-top: 40px;
+    padding-left: 25px;
+}
+
+.modal-content_cart>p {
+    text-align: center;
+}
+
+
+.modal-content>p {
+    display: flex;
+    padding: auto;
+    text-align: center;
+}
+
+
+.modal-content_cart>button#continue {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 30%;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content_cart>button#view_cart {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 10px 67px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content>button {
+    margin: 0 auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 10px 30%;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content>img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+img.success {
+    padding-top: 30%;
+    padding-left: 25px;
+}
+
+p.success_text {
+    margin: 30px auto;
+    text-align: center;
+    padding-left: 40px;
+    display: flex;
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.blur-background {
+    filter: blur(5px);
+}
+
+
+.modal-open .blur-background {
+    filter: blur(5px);
+}
+
+/* Additional */
+body > div.product_description_4 > div.product2_dec1 > img,
+body > div.product_description_3 > div.product2_dec3 > img,
+body > div.product_description_3 > div.product3_des3 > img,
+body > div.product_description_2 > div.product4_des2 > img,
+body > div.product_description_3 > div.product4_des4 > img,
+body > div.product_description_4 > div.product5_des1 > img,
+body > div.product_description_4 > div.product7_des1 > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > div.product-container > div.product_info > div.info > div.promo-container > div.promo5{
+    text-align: center;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+body > div.product-container > div.product_info > div.info > div.promo-container > div.promo_text5{
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+body > div.adapter > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+}
+
+/* table */
+table {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+    border-collapse: separate;
+    width: 80%;
+}
+
+thead th {
+    background-color: rgba(192, 192, 192, 0.4);
+    border-radius: 5px;
+}
+
+tbody td {
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px black solid;
+}
+
+tbody td img {
+    float: left;
+    margin-right: 5%; 
+}
+
+tbody td:nth-child(n + 2) {
+    width: 15%;
+}
+
+tbody th{
+    border-bottom: 1px black solid;
+}

@@ -1,0 +1,170 @@
+@import url("https://fonts.cdnfonts.com/css/gotham");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-size: cover;
+  font-family: "Gotham", sans-serif;
+  background-image: url('pictures/catogories_background.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+/*NEW LINE */
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width:13%;
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-right: 3%;
+  padding-bottom: 0;
+  margin-top:2%;
+  margin-left:3%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.icon {
+  width: 20px; 
+  height: auto; 
+  margin-right: 8px; 
+}
+
+.container .sidebar p {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative; 
+}
+
+.sidebar p::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc; 
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+}
+
+.container .sidebar a {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.selected {
+  border-radius: 15px;
+  background-color: rgb(237, 209, 255);
+  transition: border-color 0.7s ease, background-color 0.7s ease, border-radius 0.7s ease; 
+}
+
+.main-content {
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.car-list {
+  margin-bottom: 20px;
+}
+
+.car-list a {
+  display: block;
+  border-radius: 10px;
+  position:relative;
+  margin-bottom: 20%;/*original:10px*/
+  text-decoration: none;
+  color: #333;
+  font-size: 8px;
+  border-spacing: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.car-list a:hover{
+  background-color: rgb(237, 209, 255);
+}
+
+.car-info{
+  display: none;
+}
+
+.car-info.active {
+  display: block;
+}
+
+/*Car Option*/
+.car-link{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.car-link:hover {
+  border-radius: 10px; /*cancel padding*/
+}
+
+.car-option-container {
+  display:inline-block;
+  position:relative;
+  text-align: center;
+  width: 300px; 
+  height: 300px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 10px; 
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 30px;
+  background-color:rgba(255, 255, 255, 0.5);
+  animation: floatOutAnimation 0.5s ease-in-out forwards; /* Apply the animation */
+  opacity: 0;
+}
+
+@keyframes floatOutAnimation {
+  0% { transform: translateY(100px); opacity: 0; } /* Start from bottom and transparent */
+  100% { transform: translateY(0); opacity: 1; } /* Float up to original position and become opaque */
+}
+
+.car-option img {
+  max-width: 100%; 
+  max-height: 50%; 
+}
+
+.h1-option {
+  font-size: 1.0rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #007bff; 
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button-container a:hover {
+  background-color: #0056b3; 
+}
+
+
+

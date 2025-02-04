@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+
+<body>
+    <div class="invoice-container">
+        <header>
+            <div class="company-logo">
+                <img src="../pictures/logo_transparent.svg" alt="logo_icon" width="150px">
+            </div>
+
+            <div class="invoice-heading">
+                <h1>INVOICE</h1>
+            </div>
+
+        </header>
+        <hr>
+
+        <div class="address">
+            <div class="seller">
+                <h3>SELLER:</h3>
+                <h1>CARVISTA</h1>
+                <p>A-40-20, PV40,<br>JALAN LANGKAWI PERAK,<br>
+                     92038<br>DANAU KOTA, <br>
+                     SETAPAK
+                     <br>KL</p>
+            </div>
+            <div class="client">
+                <h3>CLIENT:</h3>
+                <div id="shippingDetails"></div>
+            </div>
+        </div>
+
+
+        <h3>Order Summary</h3>
+        <hr>
+        <div class="payment_summary">
+            <div class="payment-left">
+                <div id="userDetails"></div>
+                <p>Payment to : <span>CARVISTA ACCOUNT</span></p>
+                <p>Payment Method: <span id="paymentMethodDisplay"></span></p>
+            </div>
+            <div class="payment-right">
+
+                <p>Payment Date: <span id="Date"></span></p>
+                <p>Transaction No.: <span id="transactionNo"></span></p>
+                <p>Order ID: <span id="orderID"></span></p>
+            </div>
+            <hr>
+            <div id="cart_Items" class="cart-items"></div>
+        </div>
+        <div class="product-items">
+            <h2>Product Items</h2>
+            <div id="cartItems"></div>
+        </div>
+        <div class="payment-summary">
+
+            <h2>Payment Summary</h2>
+            <hr class="payment">
+            <div id="summaryDetails" class="summaryDetails"></div>
+        </div>
+    </div>
+
+    <div class="button_container">
+        <button id="printButton" type="button">Print</button>
+        <button type="button">Complete</button>
+    </div>
+
+
+    <script src="invoice.js"></script>
+
+
+</body>
+
+</html>

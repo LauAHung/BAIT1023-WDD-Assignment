@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+img#modifyBirthDate.editIcon,
+img#modifyEmail.editIcon,
+img#modifyUserName.editIcon {
+    width: 25px;
+    margin-left: 5px;
+    height: auto;
+    cursor: pointer;
+}
+
+img#modifyBirthDate.editIcon:hover,
+img#modifyEmail.editIcon:hover,
+img#modifyUserName.editIcon:hover {
+    width: 25px;
+    margin-left: 5px;
+    height: auto;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+h1 {
+    text-align: center;
+}
+
+img.alert {
+    width: 200px;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.user_info {
+    flex-grow: 1;
+    line-height: 30px;
+}
+
+.user_info p {
+    margin: 0;
+}
+
+
+.user_info button {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.user_info button:hover {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+p.invalid {
+    text-align: center;
+}
+
+button.close_btn {
+    margin: 10% auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 60px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#modalConfirm {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 60px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#modalCancel {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 65px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input#modalInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: rgba(247, 247, 247, 0.94);
+    width: 90%;
+}
+
+
+.modal-content p.login {
+    text-align: center;
+}
+
+.modal-content button#loginRedirectBtn {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 30%;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px;
+    height: 50%;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-content_alert {
+    background-color: #fefefe;
+    margin: -2% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px;
+    height: 50%;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-content p {
+    margin-bottom: 10px;
+}
+
+
+.blurred {
+    filter: blur(5px);
+}

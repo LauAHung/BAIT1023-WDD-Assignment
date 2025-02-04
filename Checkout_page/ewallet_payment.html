@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment</title>
+    <link rel="stylesheet" href="ewallet_payment.css">
+
+</head>
+
+<body>
+    <h1 class="main_title">eWallet Payment</h1>
+    <h2>Payment Information</h2>
+    <div class="container">
+        <div class="payment_detail">
+            <div class="text-container">
+                <h3>Payment Detail</h3>
+            </div>
+            <div class="content_container">
+                <div class="pic_container">
+                    <div>
+                        <img src="../pictures/Checkout/ewalletqr.png" alt="eWallet">
+                        <p>QR code will expire in <span id="timer">00:30</span></p>
+                    </div>
+                </div>
+                <div class="payment_description">
+                    <h4>Pay with your any eWallet App!</h4>
+                    <p>
+                        1. Download any eWallet App and register an account.<br>
+                        2. Tap on 'Scan' icon<br>
+                        3. Scan QR Code here and complete the payment!
+                        <button class="payment_done" id="nextButton">Next</button>
+                    </p>
+                </div>
+            </div>
+            <div class="safe_text">
+                <img src="../pictures/Checkout/safe_icon.png" alt="safe_icon" style="width: 30px;">
+                <p>Your payment will be processed in a safe and secured environment!</p>
+            </div>
+        </div>
+
+        <div class="payment_summary">
+            <div class="text-container">
+                <h3>Order Summary</h3>
+            </div>
+            <div id="userDetails"></div>
+            <p>Payment to : <span>CARVISTA ACCOUNT</span></p>
+            <p>Transaction No.: <span class="transaction_no"></span></p>
+            <p>Order ID: <span class="orderID"></span></p>
+            <hr>
+            <div id="shippingDetails"></div>
+            <div id="cart_Items" class="cart-items"></div>
+            <div id="summaryDetails" class="summaryDetails"></div>
+        </div>
+    </div>
+    <script src="ewallet_payment.js"></script>
+</body>
+
+</html>

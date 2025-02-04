@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Ploni';
+    src: url("../font/PloniRegular.woff") format('woff');
+}
+
+@import url("https://fonts.cdnfonts.com/css/gotham");
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "League Spartan", sans-serif;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Ploni", sans-serif;
+    font-size: 50px;
+    padding: 2% 0 2% 13%;
+}
+
+p.text {
+    padding-left: 13%;
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+
+.billing {
+    padding-top: 1%;
+    padding-left: 13%;
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 9%;
+    color: rgb(89, 89, 89);
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 9%;
+    color: rgb(89, 89, 89);
+}
+
+.input_info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 15px; 
+}
+
+.input_info label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input_info input, .input_info select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: rgba(247, 247, 247, 0.94);
+    width: 100%;
+}
+
+.error_message {
+    margin-left: 10px;
+    white-space: nowrap;
+    padding-bottom: 2px; 
+}
+
+button {
+    background-color: rgb(76, 108, 220);
+    color: white;
+    border: 1px rgb(76, 108, 220) solid;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 8px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-left: 13%;
+}
+

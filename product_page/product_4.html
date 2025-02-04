@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../footer_white.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+
+    <div class="product-container">
+
+        <div class="product-image-section">
+            <div class="product-image">
+                <img src="../pictures/Shop/product4_xiaomi_wireless_charging.svg" alt="Product Image" width="400px" id="mainImage">
+            </div>
+            <div class="product-thumbnails">
+                <img src="../pictures/Shop/product4_xiaomi_wireless_charging.svg" alt="Thumbnail 1"
+                    onmouseover="changeImage('../pictures/Shop/product4_xiaomi_wireless_charging.svg')" class="thumbnail">
+                <img src="../pictures/Shop/product_pic/product4_2nd.png" alt="Thumbnail 2"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product4_2nd.png')" class="thumbnail">
+                <img src="../pictures/Shop/product_pic/product4_3th.png" alt="Thumbnail 3"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product4_3th.png')" class="thumbnail">
+            </div>
+        </div>
+        <div class="product_info">
+            <div class="info">
+                <div class="product-title">Xiaomi Mi Wireless Car Charger</div>
+                <div class="promo-container">
+                    <div class="promo">
+                        Up to 10% OFF
+                    </div>
+                    <div class="promo_text">
+                        Limited Time Deal
+                    </div>
+                </div>
+                <p class="price">RM 150
+                    <span class="original-price">RM 214</span>
+                </p>
+            </div>
+
+            <p class="quantity">Quantity</p>
+
+            <div class="container">
+                <button id="decrement" onclick="stepper(this)"> - </button>
+                <input type="number" min="1" max="5" step="1" value="1" id="my-input" readonly>
+                <button id="increment" onclick="stepper(this)"> + </button>
+            </div>
+
+            <button class="add_cart_btn" data-product-id="4">Add To Cart</button>
+
+            <h2 class="title">Description</h2>
+            <p class="product-description">
+                The Xiaomi Mi Wireless Car Charger offers a seamless and convenient solution for charging your smartphone while on the mov e. Designed with simplicity and efficiency in <br/>min d, this wireless charger eliminates the hassle of dealing with cables and connector s, allowing you to power up your device effortlessly with Qi wireless charging technolog y.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="product_description_4">
+        <img src="../pictures/Shop/product_pic/product4_des1.png" alt="Product Description 1" width="100%">
+        <div class="description_text_4">
+            <div class="des_title_4">
+                <h2 class="title4">
+                    Electrically adjusts the grip when your drive starts <br/>Automatically grips and begins charging as soon as it touches your phone
+                </h2>
+            </div>
+
+            <div class="des_text_4">
+                <p class="text4">
+                    No complex cabling required during the driv e. Begins fast charging as soon as it touches your phon e.<br/> Compatible with most phones on the market that support wireless chargin g, the grip opens to a maximum width of 8 1.5mm <br/>and easily holds the Mi 9 or iPhone Xs Ma x.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product_description_2">
+        <br/><br/>
+        <div class="product4_des2">
+            <img src="../pictures/Shop/product_pic/product4_des2.png" alt="Product Description 2" width="80%">
+        </div>
+        <div class="description_text_2">
+            <div class="des_title_2">
+                <h2 class="title2">
+                    Maximum power as high as 20W <br/>Breaks the record set by the Mi Wireless Charging Pad*
+                </h2>
+            </div>
+
+            <div class="des_text_2">
+                <p class="text3_1">
+                    Ideal for driving with its 20W high-power outpu t.<br/> Capable of charging Mi 9 from 0 to 45% in 30 minutes and to full power in a mere 90 minute s.*
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_description">
+        <img src="../pictures/Shop/product_pic/product4_des3.png" alt="Product Description 3" width="400px">
+        <div class="description_text">
+            <div class="des_title">
+                <h2 style="font-size: 36px;">
+                    Glamorous round indicator on a curved glass surface<br/> All the brighte r, all the mightier
+                </h2>
+            </div>
+
+            <div class="des_text">
+                <p class="text1">
+                    Integrated 2.5D glass charging pane l, improving the cooling efficiency and ensuring a fast charg e. The round blue indicator will light up when powered o n, staying with you even during night drive s.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="product_description_3">
+        <div class="product4_des4">
+            <img src="../pictures/Shop/product_pic/product4_des4.png" alt="Product Description 4" width="80%">
+        </div>
+        <div class="description_text_3">
+            <div class="des_title_3">
+                <h2 class="title3">
+                    Navigate and charge at the same time<br/>No need to plug in or remove case*
+                </h2>
+            </div>
+
+            <div class="des_text_3">
+                <p class="text3">
+                    Begins charging as soon as it touches your phone and allows removal with a single hand when you tap the side butto n.<br/> Effective charging induction distance as far as 4m m, works well with the phone case o n.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="../pictures/logo_transparent.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="https://www.facebook.com/home.php"><img src="../pictures/sosial_media_logo/facebook.png"
+                            height="45px"></a>
+                    <a href="https://www.instagram.com/"><img src="../pictures/sosial_media_logo/instagram.webp"
+                            height="45px"></a>
+                    <a href="https://www.linkedin.com/"><img src="../pictures/sosial_media_logo/linkedin.png"
+                            height="45px"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="../pictures/sosial_media_logo/x.png"
+                            height="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="../pictures/sosial_media_logo/whatsapp.png"
+                            height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>Car Brands</h4>
+                        <ul>
+                            <li><a href="../xiaomi.html">Xiaomi</a></li>
+                            <li><a href="../tesla.html">Tesla</a></li>
+                            <li><a href="../honda.html">Honda</a></li>
+                            <li><a href="../toyota.html">Toyota</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../aboutus.html">About Us</a></li>
+                            <li><a href="../Reg_Log_page/account.html">Account</a></li>
+                            <li><a href="../feedback.html">Feedback</a></li>
+                            <li><a href="../cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+
+                        <div class="subscribe">
+                            <form id="subscribeForm">
+                                <input type="text" name="email" placeholder="Email" style="padding-top: 0; padding-bottom: 0;">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+    <script src="../subscibe.js"></script>
+    <script src="product.js"></script>
+    <script src="../navigation.js"></script>
+
+</body>
+
+</html>

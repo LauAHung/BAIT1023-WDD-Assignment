@@ -1,0 +1,445 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarVista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tesla.css">
+    <link rel="stylesheet" href="footer_white.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="pictures/logo_black.svg" height="50px " />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="aboutus.html">Discover</a></li>
+                <li><a href="shop_new.html">Shop</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+        <nav>
+            <a href="#" id="popupLink" style="position:absolute;display: none;">Terms</a>
+        </nav>
+    </header>
+
+    <button class="chatbot-button">
+        <i class="fas fa-comments">
+            <img src="pictures/chatbot.png" width="50px" height="50px">
+        </i>
+    </button>
+
+    <div class="chatbot-window">
+        <div class="chatbot-header">
+            <h2>Chatbot</h2>
+            <button class="close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="chatbot-message bot">
+                <div class="chatbot-avatar">
+                    <img src="pictures/chatbot.png" width="40px" height="40px">
+                </div>
+                <div class="chatbot-message-content">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="pictures/tesla_car_1.png">
+                <div class="introduce">
+                    <div class="title">Redefining Electric Luxury on the Road</div>
+                    <div class="topic">Tesla Model 3</div>
+                    <div class="des">
+                        The Tesla Model 3 is a sleek, efficient, and technologically advanced electric sedan that offers a premium driving experience. With its impressive performance, intuitive features, and commitment to sustainability, the Model 3 redefines the concept of luxury transportation.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Tesla Model 3</div>
+                    <div class="des">
+                        The Tesla Model 3 is a groundbreaking electric sedan that has captured the hearts and minds of drivers worldwide. With its sleek, aerodynamic design, impressive performance, and cutting-edge technology, the Model 3 represents a new era of sustainable mobility. Blending style, efficiency, and uncompromising safety, this electric marvel offers a driving experience that redefines the very concept of luxury. From its responsive acceleration to its intuitive touchscreen interface, the Model 3 seamlessly integrates the latest advancements in electric vehicle technology, making it the ultimate choice for those seeking a premium, eco-friendly driving experience.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Dual Motor</p>
+                            <p>AWD</p>
+                        </div>
+                        <div>
+                            <p>Charging efficiency</p>
+                            <p>175 miles/15 min</p>
+                        </div>
+                        <div>
+                            <p>Full Charge</p>
+                            <p>341 miles</p>
+                        </div>
+                        <div>
+                            <p>Sublime Sound</p>
+                            <p>17 speakers</p>
+                            <p>dual subwoofers, amplifiers</p>
+                        </div>
+                        <div>
+                            <p>Rear display</p>
+                            <p>8" touchscreen</p>
+                        </div>
+                        <div id="tesla_m3_div">
+                            <p>Quieter Cabin</p>
+                            <p>360-degree acoustic glass</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="checkout">
+                        <button><a href="Car_order_page/order_tesla_model_3.html" style="color:black">BUY NOW!!</a></button>
+                        <button><a href="#https://www.tesla.com/model3">CHECKOUT</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="pictures/tesla_car_m3.png">
+                <div class="introduce">
+                    <div class="title">Elevating Family Travel with Innovation</div>
+                    <div class="topic">Tesla Model X</div>
+                    <div class="des">
+                        The Tesla Model X is a revolutionary electric SUV that combines unparalleled performance, cutting-edge technology, and a striking, futuristic design. This family-friendly marvel offers a driving experience that is both thrilling and practical.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Tesla Model X</div>
+                    <div class="des">
+                        The Tesla Model X is a revolutionary electric SUV that has redefined the boundaries of what a family vehicle can be. Combining unparalleled performance, cutting-edge technology, and a striking, futuristic design, the Model X is the ultimate expression of Tesla's commitment to innovation. With its iconic falcon-wing doors, spacious interior, and advanced safety features, this electric marvel offers a driving experience that is both thrilling and practical. Whether navigating city streets or embarking on long-distance adventures, the Model X seamlessly blends power, efficiency, and uncompromising comfort, making it the perfect choice for families seeking a truly exceptional mode of transportation.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Peak Power</p>
+                            <p>1020 hp</p>
+                        </div>
+                        <div>
+                            <p>Cinematic Experience</p>
+                            <p>17” touchscreen</p>
+                        </div>
+                        <div>
+                            <p>Full Charge</p>
+                            <p>326 miles</p>
+                        </div>
+                        <div>
+                            <p>Sublime Sound</p>
+                            <p>22 speakers</p>
+                            <p>960-watt audio system</p>
+                        </div>
+                        <div>
+                            <p id="environment">Environment</p>
+                            <p>HEPA filtration</p>
+                        </div>
+                        <div id="tesla_m3_div">
+                            <p>Spacious Cabin</p>
+                            <p>seating up to seven.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="checkout">
+                        <button><a href="Car_order_page/order_tesla_model_x.html" style="color:black">BUY NOW!!</a></button>
+                        <button><a href="https://www.tesla.com/modelx">CHECKOUT</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="pictures/tesla_car_cybertruck.png">
+                <div class="introduce">
+                    <div class="title">Unleashing the Future of Electric Pickup Trucks</div>
+                    <div class="topic">Tesla Cybertruck</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        The Tesla Cybertruck is a bold and innovative electric pickup truck that challenges the norms of the automotive industry. With its distinctive design, impressive capabilities, and eco-friendly powertrain, the Cybertruck represents a new era of sustainable, high-performance transportation.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Tesla Cybertruck</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        The Tesla Cybertruck is a bold and revolutionary electric pickup truck that challenges the status quo of the automotive industry. With its distinctive, angular design and uncompromising performance, the Cybertruck represents a quantum leap in the world of electric vehicles. Engineered to withstand the toughest conditions and tackle the most demanding tasks, this electric marvel combines the ruggedness of a traditional pickup with the cutting-edge technology and eco-friendly benefits of Tesla's electric powertrain. From its impressive towing capacity to its advanced autonomous features, the Cybertruck is poised to redefine the very concept of what a pickup truck can be, ushering in a new era of sustainable, high-performance transportation.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Towing Capacity</p>
+                            <p>11000 LBS</p>
+                        </div>
+                        <div>
+                            <p>Protection</p>
+                            <p>ultra-hard stainles-steel exoskeleton</p>
+                        </div>
+                        <div>
+                            <p>Full Charge</p>
+                            <p>340 miles</p>
+                        </div>
+                        <div>
+                            <p>shatter-resistant</p>
+                            <p>armor and acoustic glass</p>
+                        </div>
+                        <div>
+                            <p>Super charging</p>
+                            <p>136 miles/15 min</p>
+                        </div>
+                        <div id="tesla_m3_div">
+                            <p>Beast Mode</p>
+                            <p>0-60 MPH/2.6 seconds†</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="checkout">
+                        <button><a href="Car_order_page/order_tesla_cybertrack.html" style="color:black">BUY NOW!!</a></button>
+                        <button><a href="https://www.tesla.com/en_my/cybertruck">CHECKOUT</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">See All &#8599</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="pictures/logo_transparent.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="https://www.facebook.com/home.php"><img src="pictures/sosial_media_logo/facebook.png"
+                            height="45px"></a>
+                    <a href="https://www.instagram.com/"><img src="pictures/sosial_media_logo/instagram.webp"
+                            height="45px"></a>
+                    <a href="https://www.linkedin.com/"><img src="pictures/sosial_media_logo/linkedin.png"
+                            height="45px"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="pictures/sosial_media_logo/x.png"
+                            height="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="pictures/sosial_media_logo/whatsapp.png"
+                            height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>Car Brands</h4>
+                        <ul>
+                            <li><a href="xiaomi.html">Xiaomi</a></li>
+                            <li><a href="tesla.html">Tesla</a></li>
+                            <li><a href="honda.html">Honda</a></li>
+                            <li><a href="toyota.html">Toyota</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="Reg_Log_page/account.html">Account</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+
+                        <div class="subscribe">
+                            <form id="subscribeForm">
+                                <input type="text" name="email" placeholder="Email" style="padding-top: 0; padding-bottom: 0;">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+
+    <script src="subscibe.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let nextButton = document.getElementById('next');
+        let prevButton = document.getElementById('prev');
+        let carousel = document.querySelector('.carousel');
+        let listHTML = document.querySelector('.carousel .list');
+        let seeMoreButtons = document.querySelectorAll('.seeMore');
+        let backButton = document.getElementById('back');
+
+        nextButton.onclick = function () {
+            showSlider('next');
+        }
+        prevButton.onclick = function () {
+            showSlider('prev');
+        }
+        let unAcceppClick;
+        const showSlider = (type) => {
+            nextButton.style.pointerEvents = 'none';
+            prevButton.style.pointerEvents = 'none';
+
+            carousel.classList.remove('next', 'prev');
+            let items = document.querySelectorAll('.carousel .list .item');
+            if (type === 'next') {
+                listHTML.appendChild(items[0]);
+                carousel.classList.add('next');
+            } else {
+                listHTML.prepend(items[items.length - 1]);
+                carousel.classList.add('prev');
+            }
+            clearTimeout(unAcceppClick);
+            unAcceppClick = setTimeout(() => {
+                nextButton.style.pointerEvents = 'auto';
+                prevButton.style.pointerEvents = 'auto';
+            }, 2000)
+        }
+        seeMoreButtons.forEach((button) => {
+            button.onclick = function () {
+                carousel.classList.remove('next', 'prev');
+                carousel.classList.add('showDetail');
+            }
+        });
+        backButton.onclick = function () {
+            carousel.classList.remove('showDetail');
+        }
+
+        //chatbot
+        const chatbotButton = document.querySelector('.chatbot-button');
+    const chatbotWindow = document.querySelector('.chatbot-window');
+    const closeButton = document.querySelector('.close-button');
+    const chatMessages = document.querySelector('.chatbot-messages');
+    const chatInput = document.querySelector('.chatbot-input input');
+
+    chatbotButton.addEventListener('click', () => {
+      if (chatbotWindow.style.display === 'flex') {
+        chatbotWindow.classList.add('closing');
+        setTimeout(() => {
+          chatbotWindow.style.display = 'none';
+          chatbotWindow.classList.remove('closing');
+        }, 300);
+      } else {
+        chatbotWindow.style.display = 'flex';
+      }
+    });
+
+    closeButton.addEventListener('click', () => {
+      chatbotWindow.classList.add('closing');
+      setTimeout(() => {
+        chatbotWindow.style.display = 'none';
+        chatbotWindow.classList.remove('closing');
+      }, 300);
+    });
+
+    function handleKeyPress(event) {
+      if (event.key === 'Enter') {
+        const userMessage = chatInput.value.trim();
+        if (userMessage) {
+          displayMessage('user', userMessage);
+          processUserInput(userMessage);
+          chatInput.value = '';
+        }
+      }
+    }
+
+    function displayMessage(sender, message) {
+      const messageElement = document.createElement('div');
+      messageElement.classList.add('chatbot-message', sender);
+      messageElement.innerHTML = `
+        ${sender === 'bot' ? '<div class="chatbot-avatar"><img src="pictures/chatbot.png" width="40px" height="40px"></div>' : ''}
+        <div class="chatbot-message-content">
+          <p>${message}</p>
+        </div>
+        ${sender === 'user' ? '<div class="user-avatar"><img src="pictures/user_avatar.png" width="37px" height="40px"></div>' : ''}
+      `;
+      chatMessages.appendChild(messageElement);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function processUserInput(userInput) {
+      // Implement your chatbot logic here
+      if (userInput.toLowerCase().includes('home') || userInput.toLowerCase().includes('main page')) {
+        const botResponse = "You can click the logo at the upper left corner to jump to the home page.<br><br>or<br><br>Click <a href='index.html' style='color:blue;font-weight:bold;'>Here</a> to go to the home page.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('categories') || userInput.toLowerCase().includes('category')) {
+        const botResponse = "Click <a href='categories.html' style='color:blue;font-weight:bold;'>Here</a> to go to the categories page.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('xiaomi')) {
+        const botResponse = "Click <a href='xiaomi.html' style='color:blue;font-weight:bold;'>Xiaomi_SU7</a> to learn more about xiaomi SU7.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('honda')) {
+        const botResponse = "Click <a href='honda.html' style='color:blue;font-weight:bold;'>Honda</a> to learn more about Honda Car.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('tesla')) {
+        const botResponse = "Click <a href='tesla.html' style='color:blue;font-weight:bold;'>Tesla</a> to learn more about Tesla Car.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('toyota')) {
+        const botResponse = "Click <a href='toyota.html' style='color:blue;font-weight:bold;'>Toyota</a> to learn more about Toyota Car.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('login')) {
+        const botResponse = "Click <a href='Reg_Log_page/login.html' style='color:blue;font-weight:bold;'>Login</a> to jump to login page.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('register') ||userInput.toLowerCase().includes('signin') || userInput.toLowerCase().includes('signup')) {
+        const botResponse = "Click <a href='Reg_Log_page/register.html' style='color:blue;font-weight:bold;'>Register</a> to jump to register page.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('about_us')) {
+        const botResponse = "Click <a href='discover.html' style='color:blue;font-weight:bold;'>About Us</a> to learn more about our company.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('shop') || userInput.toLowerCase().includes('buy')) {
+        const botResponse = "Click <a href='shop_new.html' style='color:blue;font-weight:bold;'>Here</a> to go to the shop page.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('account') || userInput.toLowerCase().includes('buy')) {
+        const botResponse = "Click <a href='Reg_Log_page/account.html' style='color:blue;font-weight:bold;'>Here</a> to go to the shop page.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('feedback')) {
+        const botResponse = "Click <a href='feedback.html' style='color:blue;font-weight:bold;'>Here</a> to go to the feedback page.";
+        displayMessage('bot', botResponse);
+      } else if (userInput.toLowerCase().includes('26 birthday') || userInput.toLowerCase().includes('birth') || userInput.toLowerCase().includes('mrbeast')) {
+        const botResponse = "<p>'MrBeast's Birthday Bonanza: 26 Teslas for 26 Lucky Fans - Spreading Joy, One Electric Ride at a Time!'Click <a href='#' style='color:blue;font-weight:bold;'>here</a> to participate lucky draw!!</p><br><img src='pictures/mrbeast.jpg' width='220px' height='165px'>";
+        displayMessage('bot', botResponse);
+      } else {
+        const botResponse = "I'm sorry, I don't understand. Could you please rephrase your question?";
+        displayMessage('bot', botResponse);
+      }
+    }
+    </script>
+</body>
+
+</html>

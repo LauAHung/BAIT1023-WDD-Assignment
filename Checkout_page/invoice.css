@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment_summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.invoice-heading h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+
+.seller,
+.client {
+    flex-basis: 48%;
+}
+
+.seller > p {
+    line-height: 25px;
+}
+
+#shippingDetails p{
+    line-height: 9px;
+}
+
+#shippingDetails h1 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+
+
+
+span {
+    font-weight: bold;
+}
+
+.shipping-details, .product-items, .payment-summary {
+    margin-bottom: 40px;
+
+}
+/* CSS */
+.total-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-label,
+.total-value {
+    flex: 1;
+text-align: right;
+}
+
+.colon {
+    margin: 0 5px; /* Adjust spacing as needed */
+}
+
+.totals-info {
+    line-height: 30px;
+}
+
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#cartItems {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.cartItems {
+    display: flex;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    margin-right: 20px;
+}
+
+.payment-summary .total-row {
+    display: flex;
+    justify-content: flex-end; /* Change this line */
+    align-items: flex-start;
+}
+
+.product-image {
+    margin-right: 20px;
+}
+
+hr.payment {
+    margin-bottom: 40px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.payment-left {
+    flex-basis: 52%; 
+}
+
+.payment-right {
+    flex-basis: 40%;
+}
+
+.total-label {
+    font-weight: bold;
+}
+
+.total-value {
+    font-weight: bold;
+}
+
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    padding: 12px;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .invoice-container {
+        padding: 10px;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .invoice-container, .invoice-container * {
+        visibility: visible;
+    }
+}

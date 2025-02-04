@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Schibsted+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="toyota.css">
+    <link rel="icon" type="image/x-icon" href="pictures/logo_white.jpg">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" id="popupLink" style="position:absolute;display: none;">Terms</a>
+        </nav>
+
+        <nav class="nav">
+            <div class="navigation-bar container">
+                <div class="item-left">
+                    <a href="index.html"><img src="pictures/logo_black.svg" height="50px " /></a>
+                </div>
+                <div class="item-center">
+                    <ul class="menu-list">
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="aboutus.html">Discover</a></li>
+                        <li><a href="shop_new.html">Shop</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="item-right">
+                    <ul class="menu-list">
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="Reg_Log_page/account.html">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-backdrop">
+
+        </nav>
+    </header>
+
+    <!--chatbot-->
+    <button class="chatbot-button">
+        <i class="fas fa-comments">
+            <img src="pictures/chatbot.png" width="50px" height="50px">
+        </i>
+    </button>
+
+    <div class="chatbot-window">
+        <div class="chatbot-header">
+            <h2>Chatbot</h2>
+            <button class="close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="chatbot-message bot">
+                <div class="chatbot-avatar">
+                    <img src="pictures/chatbot.png" width="40px" height="40px">
+                </div>
+                <div class="chatbot-message-content">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <div class="section1" id="section1">
+        <div id="toyota-intro1">
+            <div class="intro-container1">
+                <div>// BUILT FOR THE FUTURE</div>
+                <div>Toyota: The Leader in Hybrid Technology</div>
+                <div>FROM RM 159,880.00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2" id="section2">
+        <div id="toyota-intro2">
+            <div class="cover" id="cover">
+                ◤Directors and executives
+            </div>
+            <div class="intro-container2">
+                <div class="container-1">
+                    <div class="icon-image">
+                        <div class="icon">
+                            <img src="pictures/koji_sato.jpg">
+                        </div>
+                        <div class="hover-image one">
+                            <div class="img">
+                                <img src="pictures/koji_sato.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="details">
+                                    <a href="https://global.toyota/en/company/profile/executives/koji_sato.html">
+                                        <div class="name">Koji Sato</div><br>
+                                        <div class="job">Executive Director || President || Chief Executive Officer
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-image">
+                        <div class="icon">
+                            <img src="pictures/simon_humphries.jpg" alt="" />
+                        </div>
+                        <div class="hover-image one">
+                            <div class="img">
+                                <img src="pictures/simon_humphries.jpg" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="details">
+                                    <a href="https://global.toyota/en/company/profile/executives/simon_humphries.html">
+                                        <div class="name">Simon Humphries</div><br>
+                                        <div class="job">Executive Director || Chief Branding Officer</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-image">
+                        <div class="icon">
+                            <img src="pictures/hiroki.jpg" alt="" />
+                        </div>
+                        <div class="hover-image one">
+                            <div class="img">
+                                <img src="pictures/hiroki.jpg" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="details">
+                                    <a href="https://global.toyota/en/company/profile/executives/hiroki_nakajima.html">
+                                        <div class="name">Hiroki Nakajima</div><br>
+                                        <div class="job">Executive Director || Executive Vice President</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-image">
+                        <div class="icon">
+                            <img src="pictures/yoichi.jpg" alt="" />
+                        </div>
+                        <div class="hover-image one">
+                            <div class="img">
+                                <img src="pictures/yoichi.jpg" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="details">
+                                    <a href="https://global.toyota/en/company/profile/executives/yoichi_miyazaki.html">
+                                        <div class="name">Yoichi Miyazaki</div><br>
+                                        <div class="job">Executive Director || Executive Vice President</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-image">
+                        <div class="icon">
+                            <img src="pictures/kenta_kon.jpg" alt="" />
+                        </div>
+                        <div class="hover-image one">
+                            <div class="img">
+                                <img src="pictures/kenta_kon.jpg" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="details">
+                                    <a href="https://woven.toyota/en/leader/kenta-kon/">
+                                        <div class="name">Kenta Kon</div><br>
+                                        <div class="job">Executive Director || Executive Vice President</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-image last">
+                        <div class="icon">
+                            <img src="pictures/shigeru.jpg" alt="" />
+                        </div>
+                        <div class="hover-image one">
+                            <div class="img">
+                                <img src="pictures/shigeru.jpg" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="details">
+                                    <a
+                                        href="https://global.toyota/en/company/profile/executives/board-of-director/shigeru_hayakawa.html">
+                                        <div class="name">Shigeru Hayakawa</div><br>
+                                        <div class="job">Executive Director || Vice Chairman</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section3" id="section3">
+        <div id="toyota-intro3">
+            <div class="intro-container3">
+                <div>
+                    <p>History</p>
+                    Toyota, founded in 1937, has evolved into a global automotive giant known for innovation and reliability. With a rich heritage of producing quality vehicles, Toyota has become synonymous with durability and efficiency. From the iconic Corolla to the versatile RAV4, Toyota's lineup reflects a commitment to excellence and customer satisfaction. Over the years, Toyota has pioneered hybrid technology with models like the Prius, leading the way in sustainable transportation. With a focus on continuous improvement and cutting-edge design, Toyota remains a driving force in the automotive industry, shaping the future of mobility worldwide.
+                </div>
+                <div>
+                    <p style="font-size:20px;font-weight:bold;text-align: center;">Sustainability</p>
+                    Toyota is at the forefront of sustainable practices, striving to reduce its environmental impact through eco-friendly initiatives. The company's commitment to sustainability extends beyond its vehicles to its manufacturing processes and supply chain. Toyota's hybrid and electric vehicles, such as the Prius and Mirai, showcase its dedication to reducing emissions and promoting a greener future. Through investments in renewable energy and recycling programs, Toyota is actively working towards a more sustainable automotive industry.
+                </div>
+                <div>
+                    <p style="font-size:20px;font-weight:bold;text-align: center;">Safety</p>
+                    Safety is a top priority for Toyota, with a focus on developing advanced safety technologies to protect drivers, passengers, and pedestrians. Toyota's vehicles are engineered with a range of safety features, including pre-collision systems, lane departure alerts, and adaptive cruise control. The company's commitment to safety is evident in its pursuit of autonomous driving capabilities, with ongoing research and development in this field. Toyota's safety philosophy extends beyond its vehicles, with a strong emphasis on driver education and responsible driving practices.
+                </div>
+                <div>
+                    <p style="font-size:20px;font-weight:bold;text-align: center;">Quality and Reliability</p>
+                    Toyota's reputation for quality and reliability is unparalleled in the automotive industry. The company's dedication to producing vehicles that stand the test of time is evident in its meticulous manufacturing processes and rigorous quality control measures. Toyota's commitment to reliability is further demonstrated by its extensive dealer network and comprehensive warranty coverage. Customers can trust that their Toyota vehicles will provide years of trouble-free performance, thanks to the company's focus on using high-quality materials and implementing robust engineering practices.
+                </div>
+            </div>
+            <div class="intro-container3">
+                <div>
+                    <p style="font-size:20px;font-weight:bold;text-align: center;">Customer Satisfaction</p>
+                    At the heart of Toyota's success lies its unwavering commitment to customer satisfaction. The company's focus on understanding and meeting the needs of its customers has led to the development of a diverse lineup of vehicles tailored to various lifestyles and preferences. Toyota's dedication to customer service is evident in its extensive dealer network, which provides convenient access to sales, service, and support. The company's commitment to customer satisfaction is further demonstrated by its responsive customer care team and its willingness to address customer concerns promptly and effectively.
+                </div>
+                <div>
+                    <p style="font-size:20px;font-weight:bold;text-align: center;">Innovation</p>
+                    Toyota has a long history of innovation, consistently pushing the boundaries of what's possible in the automotive industry. From the development of hybrid technology to the exploration of hydrogen fuel cell vehicles, Toyota has been at the forefront of alternative fuel solutions. The company's commitment to innovation extends beyond its vehicles, with ongoing research and development in areas such as robotics, artificial intelligence, and smart city technologies. Toyota's innovative spirit is driven by a desire to create a better future, one that is more sustainable, efficient, and technologically advanced.
+                </div>
+                <div>
+                    <p style="font-size:20px;font-weight:bold;text-align: center;">Global Presence</p>
+                    Toyota's global reach is a testament to its success and the quality of its products. With manufacturing facilities in over 30 countries and a presence in more than 170 markets worldwide, Toyota has established itself as a truly global brand. The company's ability to adapt its products and services to local market needs has been a key factor in its international success. Toyota's global presence also allows it to leverage economies of scale and share best practices across its operations, ensuring consistent quality and efficiency. By maintaining a strong global footprint, Toyota continues to expand its reach and serve customers in every corner of the world.
+                </div>
+                <div>
+                    <p style="font-size:20px;font-weight:bold;text-align: center;">Corporate Social Responsibility</p>
+                    Toyota is committed to being a responsible corporate citizen, with a focus on making a positive impact on the communities it serves. The company's corporate social responsibility initiatives span a wide range of areas, including environmental protection, education, and disaster relief. Toyota's philanthropic efforts are guided by a belief in the importance of giving back and supporting the well-being of people and the planet. Through partnerships with non-profit organizations and community groups, Toyota works to address pressing social and environmental challenges. 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section4" id="section4">
+        <a href="Car_order_page/order_corolla_cross.html">ORDER COROLLA CROSS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Car_order_page/order_innova_zenix.html">ORDER INNOVA ZENIX</a>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        // 在页面加载完成后显示字幕
+        window.onload = function () {
+            var xiaomi_intro = document.getElementById('xiaomi_intro');
+            xiaomi_intro.classList.add('show'); // 添加类以显示字幕
+            setTimeout(function () {
+                var xiaomi_intro_img = document.getElementById('xiaomi_intro_img');
+                xiaomi_intro_img.classList.add('show'); // 添加类以显示图片
+            }, 1000);
+        };
+
+        // Get references to the hyperlink and popup elements
+        var popupLink = document.getElementById('popupLink');
+        var popup = document.getElementById('popup');
+
+        // Add click event listener to the hyperlink
+        popupLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior of hyperlink
+            popup.style.display = 'block'; // Display the popup
+        });
+
+        // Function to close the popup
+        function closePopup() {
+            popup.style.display = 'none'; // Hide the popup
+        }
+
+        // Select all elements with class 'xiaomi_intro_feature'
+        var divs = document.querySelectorAll('.xiaomi_intro_feature');
+
+        // Loop through each div and set the animation delay
+        divs.forEach(function (div, index) {
+            div.style.animationDelay = 2.2 + 's'; // Set animation delay based on index
+        });
+
+        // reveal each section
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('section');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        //chatbot
+        const chatbotButton = document.querySelector('.chatbot-button');
+        const chatbotWindow = document.querySelector('.chatbot-window');
+        const closeButton = document.querySelector('.close-button');
+        const chatMessages = document.querySelector('.chatbot-messages');
+        const chatInput = document.querySelector('.chatbot-input input');
+
+        chatbotButton.addEventListener('click', () => {
+            if (chatbotWindow.style.display === 'flex') {
+                chatbotWindow.classList.add('closing');
+                setTimeout(() => {
+                    chatbotWindow.style.display = 'none';
+                    chatbotWindow.classList.remove('closing');
+                }, 300);
+            } else {
+                chatbotWindow.style.display = 'flex';
+            }
+        });
+
+        closeButton.addEventListener('click', () => {
+            chatbotWindow.classList.add('closing');
+            setTimeout(() => {
+                chatbotWindow.style.display = 'none';
+                chatbotWindow.classList.remove('closing');
+            }, 300);
+        });
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                const userMessage = chatInput.value.trim();
+                if (userMessage) {
+                    displayMessage('user', userMessage);
+                    processUserInput(userMessage);
+                    chatInput.value = '';
+                }
+            }
+        }
+
+        function displayMessage(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('chatbot-message', sender);
+            messageElement.innerHTML = `
+        ${sender === 'bot' ? '<div class="chatbot-avatar"><img src="pictures/chatbot.png" width="40px" height="40px"></div>' : ''}
+        <div class="chatbot-message-content">
+          <p>${message}</p>
+        </div>
+        ${sender === 'user' ? '<div class="user-avatar"><img src="pictures/user_avatar.png" width="37px" height="40px"></div>' : ''}
+      `;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function processUserInput(userInput) {
+            // Implement your chatbot logic here
+            if (userInput.toLowerCase().includes('home') || userInput.toLowerCase().includes('main page')) {
+                const botResponse = "You can click the logo at the upper left corner to jump to the home page.<br><br>or<br><br>Click <a href='index.html' style='color:blue;font-weight:bold;'>Here</a> to go to the home page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('categories') || userInput.toLowerCase().includes('category')) {
+                const botResponse = "Click <a href='index.html' style='color:blue;font-weight:bold;'>Here</a> to go to the categories page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('xiaomi')) {
+                const botResponse = "Click <a href='xiaomi.html' style='color:blue;font-weight:bold;'>Xiaomi_SU7</a> to learn more about xiaomi SU7.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('shop') || userInput.toLowerCase().includes('buy')) {
+                const botResponse = "Click <a href='shop_new.html' style='color:blue;font-weight:bold;'>Here</a> to go to the shop page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('feedback')) {
+                const botResponse = "Click <a href='feedback.html' style='color:blue;font-weight:bold;'>Here</a> to go to the feedback page.";
+                displayMessage('bot', botResponse);
+            } else if (userInput.toLowerCase().includes('26 birthday') || userInput.toLowerCase().includes('birth') || userInput.toLowerCase().includes('mrbeast')) {
+                const botResponse = "<p>'MrBeast's Birthday Bonanza: 26 Teslas for 26 Lucky Fans - Spreading Joy, One Electric Ride at a Time!'Click <a href='#' style='color:blue;font-weight:bold;'>here</a> to participate lucky draw!!</p><br><img src='pictures/mrbeast.jpg' width='220px' height='165px'>";
+                displayMessage('bot', botResponse);
+            } else {
+                const botResponse = "I'm sorry, I don't understand. Could you please rephrase your question?";
+                displayMessage('bot', botResponse);
+            }
+        }
+
+        //slider
+        let items = document.querySelectorAll('.slider .list .item');
+        let next = document.getElementById('next');
+        let prev = document.getElementById('prev');
+        let thumbnails = document.querySelectorAll('.thumbnail .item');
+
+        // config param
+        let countItem = items.length;
+        let itemActive = 0;
+        // event next click
+        next.onclick = function () {
+            itemActive = itemActive + 1;
+            if (itemActive >= countItem) {
+                itemActive = 0;
+            }
+            showSlider();
+        }
+        //event prev click
+        prev.onclick = function () {
+            itemActive = itemActive - 1;
+            if (itemActive < 0) {
+                itemActive = countItem - 1;
+            }
+            showSlider();
+        }
+        // auto run slider
+        let refreshInterval = setInterval(() => {
+            next.click();
+        }, 5000)
+        function showSlider() {
+            // remove item active old
+            let itemActiveOld = document.querySelector('.slider .list .item.active');
+            let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
+            itemActiveOld.classList.remove('active');
+            thumbnailActiveOld.classList.remove('active');
+
+            // active new item
+            items[itemActive].classList.add('active');
+            thumbnails[itemActive].classList.add('active');
+
+            // clear auto time run slider
+            clearInterval(refreshInterval);
+            refreshInterval = setInterval(() => {
+                next.click();
+            }, 5000)
+        }
+
+        // click thumbnail
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                itemActive = index;
+                showSlider();
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

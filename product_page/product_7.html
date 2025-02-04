@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../footer_white.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+
+    <div class="product-container">
+
+        <div class="product-image-section">
+            <div class="product-image">
+                <img src="../pictures/Shop/product7_tesla_car_charging.jpeg" alt="Product Image" width="400px" id="mainImage">
+            </div>
+            <div class="product-thumbnails">
+                <img src="../pictures/Shop/product7_tesla_car_charging.jpeg" alt="Thumbnail 1"
+                    onmouseover="changeImage('../pictures/Shop/product7_tesla_car_charging.jpeg')" class="thumbnail">
+                <img src="../pictures/Shop/product_pic/product7_2nd.jpeg" alt="Thumbnail 2"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product7_2nd.jpeg')" class="thumbnail">
+            </div>
+        </div>
+        <div class="product_info">
+            <div class="info">
+                <div class="product-title">Tesla Car Charging Wall Connector</div>
+                <div class="promo-container">
+                    <div class="promo">
+                        Up to 10% OFF
+                    </div>
+                    <div class="promo_text">
+                        Limited Time Deal
+                    </div>
+                </div>
+                <p class="price">RM 2880
+                </p>
+            </div>
+
+            <p class="quantity">Quantity</p>
+
+            <div class="container">
+                <button id="decrement" onclick="stepper(this)"> - </button>
+                <input type="number" min="1" max="5" step="1" value="1" id="my-input" readonly>
+                <button id="increment" onclick="stepper(this)"> + </button>
+            </div>
+
+            <button class="add_cart_btn" data-product-id="7">Add To Cart</button>
+
+            <h2 class="title">Description</h2>
+            <p class="product-description">
+                Wall Connector is the most convenient charging solution for house s, apartment s, hospitality properties and workplace s. Starting the day fully charged is the most pleasant ownership experienc e.<br/><br/>
+                With multiple power setting s, designed for a versatile indoor/outdoor installatio n, Wall Connector provides unparalleled convenienc e.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="product_description_4">
+        <div class="product7_des1">
+            <img src="../pictures/Shop/product_pic/product7_des1.png" alt="Product Description 1" width="60%">
+        </div>
+        <div class="description_text_4">
+
+            <div class="des_text_4">
+                <p class="text4">
+                    Wall Connector is an efficient and convenient home charging solution<br/> that lets you plug your vehicle in overnight and start your day fully charge d.<br/><br/> Visit the Tesla Shop to purchase a Wall Connector and any additional part s.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_description">
+        <img src="../pictures/Shop/product_pic/product7_2nd.jpeg" alt="Product Description 2" width="400px">
+        <div class="description_text">
+            <div class="des_title">
+                <h2 style="margin-bottom: 0;">
+                    Features
+                </h2>
+            </div>
+
+            <div class="des_text">
+                <dl>
+                    <li>Compatible with both Single and Three Phase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;power </li>
+                    <li>Up to 75 km of range added per hour </li>
+                    <li>Monitor and manage your charging schedule and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usage from the Tesla app </li>
+                    <li>Wi-Fi connectivity for over-the-air update s, remote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diagnostics and access controls </li>
+                    <li>Versatile indoor / outdoor design </li>
+                    <li>Variable amperage configurations depending on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;installation location</li>
+                    <li>Power-share to support multiple Wall Connectors</li>
+                    <li>7.3m cable length</li>
+                    <li>Four-year warranty for residential use / one-year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;warranty for commercial use from purchase dat e.</li>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="../pictures/logo_transparent.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="#"><img src="../pictures/sosial_media_logo/facebook.png" height="45px"></a>
+                    <a href="#"><img src="../pictures/sosial_media_logo/instagram.webp" height="45px"></a>
+                    <a href="#"><img src="../pictures/sosial_media_logo/linkedin.png" height="45px"></a>
+                    <a href="#"><img src="../pictures/sosial_media_logo/x.png" height="45px"></a>
+                    <a href="#"><img src="../pictures/sosial_media_logo/whatsapp.png" height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+                        <div class="subscribe">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button>Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+    <script src="product.js"></script>
+    <script src="../navigation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout_step2.css">
+    <link rel="stylesheet" href="../navigation.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/login.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+    <div class="container_info">
+        <h1 class="main_title">Review and Pay</h1>
+        <h2 class="title">Cart Items</h2>
+        <div class="main-content">
+            <div id="cartItems" class="cart-items"></div>
+            <div id="details" class="details">
+                <h1 class="summary">Order Summary</h1>
+                <h2 class="summary_title">User Checkout</h2>
+                <div id="userDetails"></div>
+                <h2 class="summary_title">Shipping Address</h2>
+                <div id="shippingDetails"></div>
+                <hr>
+                <div id="summaryDetails"></div>
+                <div class="button-container">
+                    <button type="button" id="card" class="uniform-button secondary-button">Debit/Credit Card</button>
+                    <button type="button" id="ewallet" class="uniform-button secondary-button">E-wallet</button>
+                    <button type="button" id="transfer" class="uniform-button secondary-button">Cash On
+                        Delivery</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="order_summary.js"></script>
+    <script src="../navigation.js"></script>
+</body>
+
+</html>

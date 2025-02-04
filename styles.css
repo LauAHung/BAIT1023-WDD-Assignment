@@ -1,0 +1,435 @@
+@import url("https://fonts.cdnfonts.com/css/gotham");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  /*y meaning only y-axis, mandatory to make sure mouse scrool will stop on the element*/
+  overflow-y: auto;
+  --black: 23 26 32;
+  --white: 244 244 244;
+  color: rgb(var(--white));
+  scroll-behavior: smooth;
+  font-family: "Gotham", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  font-weight: bold;
+  z-index: 100;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header.sticking {
+  color: rgb(var(--black));
+  backdrop-filter: blur(10px);
+}
+
+header a,
+.nav-animate {
+  border-radius: 5px;
+  transition: all 300ms;
+}
+
+.nav-animate {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  opacity: 0;
+  z-index: -1;
+}
+
+header a:hover,
+.nav-animate:hover {
+  color: black;
+}
+
+header> :first-child {
+  margin-top: 10px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+header> :nth-child(3) {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: end;
+}
+
+header nav ul {
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li * {
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+main>section>.reveal>h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+}
+
+main>section>.reveal>p {
+  margin-left: 50px;
+  margin-top: 5%;
+  margin-right: auto;
+}
+
+main>section>.reveal>p {
+  margin: 1em auto 0.5em 1em;
+}
+
+
+main section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+section:not(:first-child)>* {
+  color: black;
+}
+
+section>footer {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: min(5rem, 15vh);
+  gap: 1.5em;
+  font-weight: bold;
+}
+
+section>.fade> :is(h1, h2) {
+  font-size: 2em;
+}
+
+section>footer>a {
+  padding: .7em min(12vw, 10em);
+  border-radius: 5px;
+}
+
+section>footer>a {
+  backdrop-filter: blur(10px);
+}
+
+section:first-child>footer>a {
+  border: .2em solid rgb(var(--white));
+}
+
+section:is(:nth-child(2), :nth-child(3))>footer>a:first-child {
+  color: rgb(var(--white));
+  border: .2em solid rgb(var(--black));
+  background: rgb(var(--black) / .75);
+}
+
+section:is(:nth-child(2), :nth-child(3))>footer>a:last-child {
+  color: rgb(var(--black));
+  border: .2em solid rgb(var(--white));
+  background: rgb(var(--white) / .65);
+}
+
+section:last-child>img {
+  margin: 1em auto 1em auto;
+  width: 75%;
+  height: 50%;
+  object-fit: cover;
+}
+
+section>aside {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+section > aside > * {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p.sec2 {
+  text-align: center;
+}
+
+
+/* ==================FIRST PAGE TEXT FADE IN================= */
+
+@keyframes customFadeInUp {
+  from {
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes customFadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+h1.maintext {
+  font-size: 40px;
+}
+
+p.mainp {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.custom-animation {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+}
+
+.customAnimatedFadeInUp {
+  opacity: 0;
+}
+
+.customFadeInUp {
+  opacity: 0;
+  animation-name: customFadeInUp;
+  -webkit-animation-name: customFadeInUp;
+}
+
+/* ==================FIRST PAGE TEXT FADE OUT================= */
+
+/* ==================FOOTER================= */
+
+body > footer {
+  background-color: black;
+  color: white;
+  scroll-snap-align: start;
+}
+
+body > footer > .footer-upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 70px;
+  border-bottom: 1px solid rgb(54, 53, 53);
+}
+
+body > footer > .footer-upper > .left-content {
+  display: flex;
+  align-items: center;
+}
+
+body > footer > .footer-upper > .right-content {
+  margin-left: 10px;
+}
+
+body > footer > .footer-upper > .right-content > .mediasocial > a {
+  margin-right: 10px;
+}
+
+body > footer > .footer-upper > .left-content > img {
+  margin-right: 20px;
+}
+
+body > footer > .footer-lower {
+  padding: 30px 80px;
+}
+
+body > footer > .footer-lower > .footer_lower_container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text {
+  width: 25%;
+  padding: 0 15px;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > ul {
+  list-style: none;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer_text > h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e9541e;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > ul > li > a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > ul > li > a:hover {
+  padding-left: 10px;
+  color: #ffc801;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > p {
+  color: #bbbbbb;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > .subscribe {
+  display: flex;
+  align-items: flex-start;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > .subscribe input {
+  flex: 1; 
+  padding: 14px 20px;
+  border: 1px solid #2E2E2E;
+  background: #2E2E2E;
+  color: #fff;
+  margin-top: 15px;
+  border-top-right-radius: 0; 
+  border-bottom-right-radius: 0;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > .subscribe button {
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  color: #fff;
+  margin-top: 15px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+body > footer > .footer-lower > .footer_lower_container > .footer_lower_row > .footer_text > .subscribe form {
+  display: flex;
+  width: 100%;
+}
+
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(48, 47, 47);
+}
+
+.copyright {
+  text-align: center;
+  color: rgb(99, 99, 99);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  padding: 12px;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border-color: white;
+}

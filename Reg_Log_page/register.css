@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Ploni';
+    src: url("../font/PloniRegular.woff") format('woff');
+}
+
+@import url("https://fonts.cdnfonts.com/css/gotham");
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: rgb(6, 0, 69);
+    background: linear-gradient(158deg, rgba(6, 0, 69, 1) 7%, rgba(0, 8, 155, 1) 40%, rgba(0, 151, 255, 1) 100%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.reg_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    height: 90%;
+    padding-top: 8vh;
+}
+.container2 {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    height: 90%;
+    padding-top: 0vh;
+}
+
+.container_1 {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    height: 90%;
+    padding-top: 1vh;
+
+}
+
+.login,
+.register {
+    width: 38%;
+}
+
+/*Start Login Style*/
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+    font-size: 15px;
+    padding-left: 60px;
+    font-size: 16px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    background-color: rgba(247, 247, 247, 0.94);
+    width: 100%;
+}
+
+
+input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}
+
+/*Start Register Style*/
+.login {
+    float: left;
+    height: 100%;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    position: absolute;
+    padding-left: 10vw;
+}
+
+
+.login p {
+    font-size: 1.2vw;
+    margin-bottom: 30px;
+    display: inline;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.login h1 {
+    margin-bottom: 40px;
+    font-size: 4vw;
+    text-align: left;
+    margin-top: 20px;
+    font-family: "Pacifico", cursive;
+
+}
+
+.login a {
+    /* float: right; */
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+    font-size: large;
+}
+
+.login a:hover {
+    color: #9526a9;
+    font-weight: bold
+}
+
+.login img {
+    width: 13vw;
+    min-width: 100px;
+    display: block;
+}
+
+/*Start Register Style*/
+.register {
+    float: right;
+    background-color: #fafafa;
+    height: 79vh;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    position: absolute;
+    min-width: 40vw;
+}
+
+.register img {
+    width: 5vh;
+    position: absolute;
+    padding-top: 5px;
+    margin-top: 3px;
+    margin-left: 13px;
+    filter: invert(0.4);
+}
+
+.register h1 {
+    margin-bottom: 10px;
+    font-size: 3vw;
+    text-align: left;
+    font-family: "Pacifico", cursive;
+}
+
+h1.description {
+    padding-top: 20px;
+    font-size: 1.3vw;
+    padding-bottom: 20px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+
+.register button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #9526a9;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.register button:hover {
+    width: 101%;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: #ac16c4;
+}
+
+
+/* POP OUT */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 250px;
+    height: 50%;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal p {
+    text-align: center;
+    margin: 30px;
+}
+
+.modal button {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 30%;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal button:hover {
+    background-color: #0056b3;
+}
+
+img.failed {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}

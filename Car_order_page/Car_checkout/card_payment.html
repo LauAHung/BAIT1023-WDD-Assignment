@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>card.html</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 class="main_title">Credit/Debit Card Payment</h1>
+    <h2>Payment Information</h2>
+
+    <div class="container">
+        <div class="checkout">
+            <div class="credit-card-box">
+                <div class="flip">
+                    <div class="front">
+                        <div class="chip">
+                            <img src="../../pictures/checkout/card_chip.png">
+                        </div>
+                        <div class="logo">
+                            <img src="../../pictures/checkout/visa.png">
+                        </div>
+                        <div class="number"></div>
+                        <div class="card-holder">
+                            <label>Card holder</label>
+                            <div></div>
+                        </div>
+                        <div class="card-expiration-date">
+                            <label>Expires</label>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="strip"></div>
+                        <div class="logo">
+                            <img src="../../pictures/checkout/visa.png">
+                        </div>
+                        <div class="cvv">
+                            <label>CVV</label>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="payment-form" class="form" autocomplete="off" novalidate>
+                <fieldset>
+                    <label for="card-number">Card Number</label>
+                    <input type="num" id="card-number" class="input-cart-number" maxlength="4" />
+                    <input type="num" id="card-number-1" class="input-cart-number" maxlength="4" />
+                    <input type="num" id="card-number-2" class="input-cart-number" maxlength="4" />
+                    <input type="num" id="card-number-3" class="input-cart-number" maxlength="4" />
+                </fieldset>
+                <fieldset>
+                    <label for="card-holder">Card holder</label>
+                    <input type="text" id="card-holder" />
+                </fieldset>
+                <fieldset class="fieldset-expiration">
+                    <label for="card-expiration-month">Expiration date</label>
+                    <div class="select">
+                        <select id="card-expiration-month">
+                            <option></option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select id="card-expiration-year">
+                            <option></option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                            <option>2032</option>
+                            <option>2033</option>
+                            <option>2034</option>
+                            <option>2035</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-cvv">
+                    <label for="card-cvv">CVV</label>
+                    <input type="text" id="card-cvv" maxlength="3" />
+                </fieldset>
+                <button type="submit" class="btn" id="nextButton">Submit</button>
+            </form>
+        </div>
+
+        <div class="payment_summary">
+            <div class="text-container">
+                <h3>Order Summary</h3>
+            </div>
+            <div id="userDetails" style="padding-left: 10px;line-height:30px;"></div>
+            <p style="padding-left: 10px;line-height:30px;">Payment to:CARVISTA ACCOUNT</p>
+            <div style="padding-left: 10px;line-height:30px;" id="transactionNumbers"></div>
+            <div style="padding-left: 10px;line-height:30px;" id="orderIDs"></div>
+            <hr>
+            <div id="packageDetails-1" class="price-details"></div>
+            <div id="packagePrice" class="price-details"></div>
+            <hr>
+            <div class="price-details" style="font-weight:bold;font-size:30px;"><div style="text-align: left;">Deposit:</div><div style="text-align: right;">RM 1,000</div></div>
+        </div>
+    </div>
+
+    <script src="car_checkout.js"></script>
+    <script src="car_summary.js"></script>
+    <script src="card_payment.js"></script>
+
+
+</body>
+
+</html>

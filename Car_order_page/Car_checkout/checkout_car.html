@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="checkout.css">
+        <link rel="stylesheet" href="../../navigation.css">
+        <link rel="stylesheet" href="../../footer_white.css">
+    </head>
+
+<body>
+    
+    <header>
+        <div>
+            <a class="logo" href="../../index.html"><img src="../../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../../Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+    <h1>Personal Detail</h1>
+    <p class="text">Enter your name and email address to receive notifications for this order.</p>
+    <form id="userForm">
+        <div class="row">
+            <div class="input_info">
+                <label for="firstName">
+                    First Name
+                    <span class="error_message" id="firstName_error" style="color: red;"></span>
+                </label>
+                <input class="firstName" type="text" id="firstName"  required>
+            </div>
+            <div class="input_info">
+                <label for="lastName">
+                    Last Name
+                    <span class="error_message" id="lastName_error" style="color: red;"></span>
+                </label>
+                <input class="lastName" type="text" id="lastName"  required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input_info">
+                <label for="address">
+                    Address
+                    <span class="error_message" id="address_error" style="color: red;"></span>
+                </label>
+    
+                <input class="address" type="text" id="address"  required>
+            </div>
+            <div class="input_info">
+                <label for="address2">Address Line 2 (optional)</label>
+                <input class="address2" type="text" id="address2">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input_info">
+                <label for="state">State
+                    <span class="error_message" id="state_error" style="color: red;"></span>
+                </label>
+    
+                <select name="state" id="state" required>
+                    <option value="" disabled selected></option>
+                    <option value="Perlis">Perlis</option>
+                    <option value="Kedah">Kedah</option>
+                    <option value="Pulau Pinang">Pulau Pinang</option>
+                    <option value="Perak">Perak</option>
+                    <option value="Pahang">Pahang</option>
+                    <option value="Selangor">Selangor</option>
+                    <option value="Negeri Sembilan">Negeri Sembilan</option>
+                    <option value="Melaka">Melaka</option>
+                    <option value="Johor">Johor</option>
+                    <option value="Terengganu">Terrenganu</option>
+                    <option value="Kelantan">Kelantan</option>
+                    <option value="Sarawak">Sarawak</option>
+                    <option value="Sabah">Sabah</option>
+                    <option value="KL">WP Kuala Lumpur</option>
+                    <option value="Labuan">WP Labuan</option>
+                    <option value="Putrajaya">WP Putrajaya</option>
+                </select>
+            </div>
+            <div class="input_info">
+                <label for="city">
+                    City
+                    <span class="error_message" id="city_error" style="color: red;"></span>
+                </label>
+                <input class="city" type="text" id="city" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input_info">
+                <label for="postcode">
+                    Post Code
+                    <span class="error_message" id="postcode_error" style="color: red;"></span>
+                </label>
+                <input class="postcode" type="text" id="postcode" required>
+            </div>
+            <div class="input_info">
+                <label for="mobileNumber">
+                    Mobile Phone Number
+                    <span class="error_message" id="mobileNumber_error" style="color: red;"></span>
+                </label>
+                <input class="mobileNumber" type="tel" id="mobileNumber"  required>
+            </div>
+        </div>
+
+        <button type="button" onclick="saveDetails()">Next</button>
+    </form>
+
+    <footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="../../pictures/logo_transparent.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="https://www.facebook.com/home.php"><img src="../../pictures/sosial_media_logo/facebook.png"
+                            height="45px"></a>
+                    <a href="https://www.instagram.com/"><img src="../../pictures/sosial_media_logo/instagram.webp"
+                            height="45px"></a>
+                    <a href="https://www.linkedin.com/"><img src="../../pictures/sosial_media_logo/linkedin.png"
+                            height="45px"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="../../pictures/sosial_media_logo/x.png"
+                            height="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="../../pictures/sosial_media_logo/whatsapp.png"
+                            height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>Car Brands</h4>
+                        <ul>
+                            <li><a href="../../xiaomi.html">Xiaomi</a></li>
+                            <li><a href="../../tesla.html">Tesla</a></li>
+                            <li><a href="../../honda.html">Honda</a></li>
+                            <li><a href="../../toyota.html">Toyota</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../../aboutus.html">About Us</a></li>
+                            <li><a href="../../Reg_Log_page/account.html">Account</a></li>
+                            <li><a href="../../feedback.html">Feedback</a></li>
+                            <li><a href="../../cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+
+                        <div class="subscribe">
+                            <form id="subscribeForm">
+                                <input type="text" name="email" placeholder="Email"">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+    <script src="../../subscibe.js"></script>
+    <script src="checkout.js"></script>
+    <script src="car_summary.js"></script>
+    <script src="car_checkout.js"></script>
+    <script src="../../navigation.js"></script>
+</body>
+</html>

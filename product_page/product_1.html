@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    
+</head>
+
+<body>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../footer_white.css">
+    <link rel="stylesheet" href="../subscribe.css">
+    </head>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+
+    <div class="product-container">
+
+        <div class="product-image-section">
+            <div class="product-image">
+                <img src="../pictures/Shop/product1_carcam.webp" alt="Product Image" width="400px" id="mainImage">
+            </div>
+            <div class="product-thumbnails">
+                <img src="../pictures/Shop/product1_carcam.webp" alt="Thumbnail 1"
+                    onmouseover="changeImage('../pictures/Shop/product1_carcam.webp')" class="thumbnail">
+                <img src="../pictures/Shop/product_pic/product1_2nd.png" alt="Thumbnail 2"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product1_2nd.png')" class="thumbnail">
+                <img src="../pictures/Shop/product_pic/product1_3th.png" alt="Thumbnail 3"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product1_3th.png')" class="thumbnail">
+            </div>
+        </div>
+        <div class="product_info">
+            <div class="info">
+                <div class="product-title">70mai Car Recorder Dash Cam</div>
+                <div class="promo-container">
+                    <div class="promo">
+                        Up to 30% OFF
+                    </div>
+                    <div class="promo_text">
+                        Limited Time Deal
+                    </div>
+                </div>
+                <p class="price">RM 205
+                    <span class="original-price">RM 293</span>
+                </p>
+            </div>
+
+            <p class="quantity">Quantity</p>
+
+            <div class="container">
+                <button id="decrement" onclick="stepper(this)"> - </button>
+                <input type="number" min="1" max="5" step="1" value="1" id="my-input" readonly>
+                <button id="increment" onclick="stepper(this)"> + </button>
+            </div>
+
+            <button class="add_cart_btn" data-product-id="1">Add To Cart</button>
+
+            <h2 class="title">Description</h2>
+            <p class="product-description">The 70mai M300 is a car recorder dash cam with a 1296P resolutio n, 140°
+                field of vie w, and 2304 x 1296P recordin g. It has a 3-megapixel camer a, night visio n, and a
+                built-in
+                G-sensor that detects sudden shakes or collisions while the car is o ff. The M300 also has a parking
+                mode that automatically activates to detect hit-and-run collision s, but requires a 70mai Hardware
+                Kit to use .
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="product_description_4">
+        <img src="../pictures/Shop/product_pic/product1_des4.png" alt="Product Description 3" width="100%">
+        <div class="description_text_4">
+            <div class="des_title_4">
+                <h2 class="title4">
+                    24H Smart Parking Surveillance
+                </h2>
+            </div>
+
+            <div class="des_text_4">
+                <p class="text4">
+                    Continuous recording at 1 fps during parking mod e. <br /> Compresses every 30 minutes of video into
+                    1 minute to save memory card spac e,<br /> and allow much faster playback so you can catch noteworthy
+                    events instantl y.
+                </p>
+                <p class="text4">
+                    With this featur e, you can also capture the changing process of thing s, such as a sunse t.
+                </p>
+                <p class="text4_1">
+                    *Enabled by the 70mai hardwire ki t, sold separatel y.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product_description_2">
+        <img src="../pictures/Shop/product_pic/product1_des2.png" alt="Product Description 2" width="100%">
+        <div class="description_text_2">
+            <div class="des_title_2">
+                <h2 class="title2">
+                    1.5x Clearer than 1080P
+                </h2>
+            </div>
+
+            <div class="des_text_2">
+                <p class="text2">
+                    Equipped with a 3-megapixel camer a, the Dash Cam M300 records in 2304x1296 P, producing sharper
+                    images with real-life detail s.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_description">
+        <img src="../pictures/Shop/product_pic/product1_des.png" alt="Product Description 1" width="400px">
+        <div class="description_text">
+            <div class="des_title">
+                <h2>
+                    App Control
+                </h2>
+            </div>
+
+            <div class="des_text">
+                <p class="text1">
+                    With built-in WiF i, the M300 connects to the 70mai Ap p, so you can check recordings in realtime and
+                    take photos whenever you need to!
+                </p>
+                <p class="text1">
+                    Manage recording duratio n, turn on parking surveillanc e, download saved files to your phone&nbsp;&nbsp;..&nbsp;all at
+                    your fingertips!
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="product_description_3">
+        <img src="../pictures/Shop/product_pic/product1_dec3.png" alt="Product Description 3" width="100%">
+        <div class="description_text_3">
+            <div class="des_title_3">
+                <h2 class="title3">
+                    Time-Lapse Recording*
+                </h2>
+            </div>
+
+            <div class="des_text_3">
+                <p class="text3">
+                    Condenses long periods of time into shorter video s.<br/>
+                    Capturing changes or events over hours or even days in just a few minute s.
+                </p>
+                <p class="text3_1">
+                    *Enabled by the 70mai hardwire ki t, sold separatel y.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="../pictures/logo_transparent.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="https://www.facebook.com/home.php"><img src="../pictures/sosial_media_logo/facebook.png"
+                            height="45px"></a>
+                    <a href="https://www.instagram.com/"><img src="../pictures/sosial_media_logo/instagram.webp"
+                            height="45px"></a>
+                    <a href="https://www.linkedin.com/"><img src="../pictures/sosial_media_logo/linkedin.png"
+                            height="45px"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="../pictures/sosial_media_logo/x.png"
+                            height="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="../pictures/sosial_media_logo/whatsapp.png"
+                            height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>Car Brands</h4>
+                        <ul>
+                            <li><a href="../xiaomi.html">Xiaomi</a></li>
+                            <li><a href="../tesla.html">Tesla</a></li>
+                            <li><a href="../honda.html">Honda</a></li>
+                            <li><a href="../toyota.html">Toyota</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../aboutus.html">About Us</a></li>
+                            <li><a href="../Reg_Log_page/account.html">Account</a></li>
+                            <li><a href="../feedback.html">Feedback</a></li>
+                            <li><a href="../cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+
+                        <div class="subscribe">
+                            <form id="subscribeForm">
+                                <input type="text" name="email" placeholder="Email" style="padding-top: 0; padding-bottom: 0;">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+
+    <script src="product.js"></script>
+    <script src="../navigation.js"></script>
+    <script src="../subscibe.js"></script>
+
+</body>
+
+</html>

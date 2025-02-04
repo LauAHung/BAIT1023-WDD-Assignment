@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../footer_white.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+
+    <div class="product-container">
+
+        <div class="product-image-section">
+            <div class="product-image">
+                <img src="../pictures/Shop/product_pic/product_5.jpeg" alt="Product Image" width="400px" id="mainImage">
+            </div>
+            <div class="product-thumbnails">
+                <img src="../pictures/Shop/product_pic/product_5.jpeg" alt="Thumbnail 1"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product_5.jpeg')" class="thumbnail">
+            </div>
+        </div>
+        <div class="product_info">
+            <div class="info">
+                <div class="product-title">Tesla Gen 2 Universal Mobile Connector</div>
+                <div class="promo-container">
+                    <div class="promo5">
+                        Up to 0% OFF
+                    </div>
+                    <div class="promo_text5">
+                        No Discount
+                    </div>
+                </div>
+                <p class="price">RM 1500
+                </p>
+            </div>
+
+            <p class="quantity">Quantity</p>
+
+            <div class="container">
+                <button id="decrement" onclick="stepper(this)"> - </button>
+                <input type="number" min="1" max="5" step="1" value="1" id="my-input" readonly>
+                <button id="increment" onclick="stepper(this)"> + </button>
+            </div>
+
+            <button class="add_cart_btn" data-product-id="5">Add To Cart</button>
+
+            <h2 class="title">Description</h2>
+            <p class="product-description">
+                The Gen 2 Universal Mobile Connector is compatible with the following adapters: BS1363 and higher power Blue adapters IEC 60309 (16A/32A ). The max charge rate is determined by the adapte r. Every Universal Mobile Connector comes with a 6-meter cable to allow for maximum flexibility in parking location s.<br/><br/>
+                Recommended for Model S, Model 3, Model X and Model Y.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="product_description_4">
+        <div class="product5_des1">
+            <img src="../pictures/Shop/product_pic/product5_des1.jpeg" alt="Product Description 1" width="70%">
+        </div>
+        <div class="description_text_4">
+            <div class="des_title_4">
+                <h2 class="title4">
+                    Mobile Connector
+                </h2>
+            </div>
+
+            <div class="des_text_4">
+                <p class="text4">
+                    Charge your vehicle from different outlets at low to medium speed s.<br/> Using a standard household outlet can provide charging speeds up to 3 miles of range per hou r.<br/> Using a 240 volt outlet provides up to 30 miles of range per hour depending on vehicle mode l.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_description">
+        <img src="../pictures/Shop/product_pic/product5_des2.jpeg" alt="Product Description 2" width="400px">
+        <div class="description_text">
+            <div class="des_title">
+                <h2>
+                    Optional Adapters
+                </h2>
+            </div>
+
+            <div class="des_text">
+                <p class="text1">
+                    Tesla Mobile Connector offers optional adapter s, allowing you to connect to different types of outlets and socket s.
+                </p>
+                <p class="text1">
+                    Whether you're at hom e, at wor k, or on the roa d, you can easily find a compatible charging solution to keep your Tesla powered up and ready to g o. The optional adapters include options for different plug types and power rating s, ensuring compatibility with a wide range of electrical system s.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_description_4">
+        <div class="description_text_4">
+            <div class="des_title_4">
+                <h2 class="title4" style="margin-bottom: 0;">
+                    Learn More About Optional Adapters
+                </h2>
+            </div>
+            <p class="text3_1" style="margin-bottom: 3%;">
+                *Click below image to <b>learn more</b>
+            </p>
+        </div>
+    </div>
+
+    <div class="adapter">
+        <img src="../pictures/Shop/product_pic/product5_des3.jpeg" alt="Optional Adapters" usemap="#optionalAdapters">
+        <map name="optionalAdapters" id="optionalAdapters">
+            <area shape="rect" coords="0,0,860,550" href="product_5op.html" alt="Adapters"/>
+        </map>
+    </div>
+
+    <footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="../pictures/logo_transparent.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="https://www.facebook.com/home.php"><img src="../pictures/sosial_media_logo/facebook.png"
+                            height="45px"></a>
+                    <a href="https://www.instagram.com/"><img src="../pictures/sosial_media_logo/instagram.webp"
+                            height="45px"></a>
+                    <a href="https://www.linkedin.com/"><img src="../pictures/sosial_media_logo/linkedin.png"
+                            height="45px"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="../pictures/sosial_media_logo/x.png"
+                            height="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="../pictures/sosial_media_logo/whatsapp.png"
+                            height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>Car Brands</h4>
+                        <ul>
+                            <li><a href="../xiaomi.html">Xiaomi</a></li>
+                            <li><a href="../tesla.html">Tesla</a></li>
+                            <li><a href="../honda.html">Honda</a></li>
+                            <li><a href="../toyota.html">Toyota</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../aboutus.html">About Us</a></li>
+                            <li><a href="../Reg_Log_page/account.html">Account</a></li>
+                            <li><a href="../feedback.html">Feedback</a></li>
+                            <li><a href="../cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+
+                        <div class="subscribe">
+                            <form id="subscribeForm">
+                                <input type="text" name="email" placeholder="Email" style="padding-top: 0; padding-bottom: 0;">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+    <script src="product.js"></script>
+    <script src="../subscibe.js"></script>
+    <script src="../navigation.js"></script>
+
+</body>
+
+</html>

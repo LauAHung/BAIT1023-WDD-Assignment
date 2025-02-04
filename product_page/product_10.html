@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../footer_white.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_transparent.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Catogeries</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+
+    <div class="product-container">
+
+        <div class="product-image-section">
+            <div class="product-image">
+                <img src="../pictures/Shop/product_pic/product10.jpeg" alt="Product Image" width="400px" id="mainImage">
+            </div>
+            <div class="product-thumbnails">
+                <img src="../pictures/Shop/product_pic/product10.jpeg" alt="Thumbnail 1"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product10.jpeg')" class="thumbnail">
+                <img src="../pictures/Shop/product_pic/product10_2nd.jpeg" alt="Thumbnail 2"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product10_2nd.jpeg')" class="thumbnail">
+                <img src="../pictures/Shop/product_pic/product10_3rd.jpeg" alt="Thumbnail 3"
+                    onmouseover="changeImage('../pictures/Shop/product_pic/product10_3rd.jpeg')" class="thumbnail">
+            </div>
+        </div>
+        <div class="product_info">
+            <div class="info">
+                <div class="product-title">Baseus Dual USB-A Car Charger</div>
+                <div class="promo-container">
+                    <div class="promo5">
+                        Up to 0% OFF
+                    </div>
+                    <div class="promo_text5">
+                        No Discount
+                    </div>
+                </div>
+                <p class="price">RM 15
+                </p>
+            </div>
+
+            <p class="quantity">Quantity</p>
+
+            <div class="container">
+                <button id="decrement" onclick="stepper(this)"> - </button>
+                <input type="number" min="1" max="5" step="1" value="1" id="my-input" readonly>
+                <button id="increment" onclick="stepper(this)"> + </button>
+            </div>
+
+            <button class="add_cart_btn" data-product-id="9">Add To Cart</button>
+
+            <h2 class="title">Description</h2>
+            <p class="product-description">
+                Stay charged on the move with the Baseus Dual USB-A Car Charge r. With its sleek design and dual port s, power up your devices effortlessly while on the roa d. Compac t, <br/>stylis h, and built to last - it's the perfect companion for your travel s.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="product_description_3">
+        <div class="product3_des3">
+            <img src="../pictures/Shop/product_pic/product10_des1.jpeg" alt="Product Description 1" width="50%">
+        </div>
+        <div class="description_text_3">
+            <div class="des_text_3">
+                <p class="text3">
+                    Enjoy quick and safe charging of up to two USB devices with this compact cigarette lighter charge r.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_description">
+        <img src="../pictures/Shop/product_pic/product10_des2.jpeg" alt="Product Description 2" width="400px">
+        <div class="description_text">
+            <div class="des_title">
+                <h2 style="margin-bottom: 0;">
+                    Feature
+                </h2>
+            </div>
+           
+            <p class="text1">
+                <ul style="font-size: 24px;">
+                    <li>Dual USB QC 3.0 quick charger</li>
+                    <li>Smart and safe charging</li>
+                    <li> Soft ambient light shows soft and not distractin g. When you drive at night you can find the charging port quickly </li>
+                    <li>Suitable for most car model s, the car charger are in common use on 12-24V car s, which are applicable for car typ e, SUV type and RV type</li>
+                </ul>
+            </p> 
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-upper">
+            <div class="left-content">
+                <img src="../pictures/logo_transparent.svg" height="80px">
+                <h1>
+                    CARVISTA
+                </h1>
+            </div>
+            <div class="right-content">
+                <div class="mediasocial">
+                    <a href="https://www.facebook.com/home.php"><img src="../pictures/sosial_media_logo/facebook.png"
+                            height="45px"></a>
+                    <a href="https://www.instagram.com/"><img src="../pictures/sosial_media_logo/instagram.webp"
+                            height="45px"></a>
+                    <a href="https://www.linkedin.com/"><img src="../pictures/sosial_media_logo/linkedin.png"
+                            height="45px"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="../pictures/sosial_media_logo/x.png"
+                            height="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="../pictures/sosial_media_logo/whatsapp.png"
+                            height="45px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer_lower_container">
+                <div class="footer_lower_row">
+                    <div class="footer_text">
+                        <h4>Car Brands</h4>
+                        <ul>
+                            <li><a href="../xiaomi.html">Xiaomi</a></li>
+                            <li><a href="../tesla.html">Tesla</a></li>
+                            <li><a href="../honda.html">Honda</a></li>
+                            <li><a href="../toyota.html">Toyota</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../aboutus.html">About Us</a></li>
+                            <li><a href="../Reg_Log_page/account.html">Account</a></li>
+                            <li><a href="../feedback.html">Feedback</a></li>
+                            <li><a href="../cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_text">
+                        <h4>Subscribe</h4>
+                        <p>
+                            Don't miss to subscribe to our new feeds!
+                        </p>
+
+                        <div class="subscribe">
+                            <form id="subscribeForm">
+                                <input type="text" name="email" placeholder="Email" style="padding-top: 0; padding-bottom: 0;">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">Copyright ©2024 All rights reserved || CARVISTA</div>
+        <div class="footer-line"></div>
+    </footer>
+
+    <script src="../subscibe.js"></script>
+    <script src="product.js"></script>
+    <script src="../navigation.js"></script>
+
+</body>
+
+</html>

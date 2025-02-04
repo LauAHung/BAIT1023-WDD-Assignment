@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: auto;
+	justify-content: center;
+	background-color: rgb(0, 0, 0);
+}
+
+
+.wrapper {
+	background-color: rgba(255, 255, 255, 10%);
+	padding: 2rem;
+	max-width: 100%;
+	width: 100%;
+	border-radius: .75rem;
+	box-shadow: 8px 8px 30px rgba(0, 0, 0, .05);
+	display: block;
+
+	p {
+		text-align: left;
+		color: white;
+		font-size: 15px;
+
+	}
+}
+
+.wrapper h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: white;
+	font-family: 'Courier New', Courier;
+}
+
+.rating,
+.rating2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: rgb(228, 176, 52);
+	margin-bottom: 2rem;
+}
+
+.rating .star,
+.rating2 .star {
+	cursor: pointer;
+}
+
+.rating .star.active,
+.rating2 .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+.rating .star:hover,
+.rating2 .star:hover {
+	transform: scale(1.1);
+}
+
+textarea {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 5%);
+	padding: 1rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+	color: white;
+	font-size: larger;
+}
+
+.btn-group {
+	display: flex;
+	grid-gap: .5rem;
+	justify-content: center;
+}
+
+.btn-group .btn {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: .80rem 2.5rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+
+.btn-group .btn.submit {
+	background: rgba(107, 105, 105, 0.623);
+	color: white;
+}
+
+.btn-group .btn.submit:hover {
+	background: white;
+	color: rgba(107, 105, 105, 0.623);
+}
+
+.btn-group .btn.cancel {
+	margin-left: 50px;
+	background: rgba(107, 105, 105, 0.623);
+	color: white;
+}
+
+.btn-group .btn.cancel:hover {
+	background: white;
+	color: rgba(107, 105, 105, 0.623);
+}
+
+.review-container {
+	background-color: rgba(255, 255, 255, 0.1);
+	display: grid;
+	align-items: center;
+	padding: 10px 10px 10px 10px;
+	margin-top: 10px;
+
+
+}
+
+.review-box img {
+	background-color: #AAA;
+	float: left;
+	margin-right: 10px;
+
+}
+
+.review-text {
+	p {
+		color: white;
+	}
+
+	.output {
+		color: white;
+	}
+
+	span {
+		color: white
+	}
+}
+
+
+/* POP OUT */
+
+/* Modal container */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	color: #000000;
+}
+
+/* Modal content box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 10% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 200px;
+	height: 50%;
+	border-radius: 20px;
+	font-family: "League Spartan", sans-serif;
+	font-size: 16px;
+	animation: fadeIn 0.5s ease-in-out;
+	text-align: center;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+/* Close button */
+.close-button {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.close-button:hover,
+.close-button:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button#loginBtn{
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(76, 108, 220);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 30%;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#loginBtn:hover{
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 55, 255);
+    color: white;
+    font-family: "Ploni", sans-serif;
+    font-weight: 550;
+    padding: 5px 30%;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}

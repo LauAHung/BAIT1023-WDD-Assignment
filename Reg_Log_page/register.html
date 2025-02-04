@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../navigation_black.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="logo" href="../index.html"><img src="../pictures/logo_black.svg" height="50px " /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../categories.html">Categories</a></li>
+                <li><a class="nav-link" href="../aboutus.html">Discover</a></li>
+                <li><a class="nav-link" href="../shop_new.html">Shop</a></li>
+                <li><a class="nav-link" href="../feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../cart.html">Cart</a></li>
+                <li><a class="nav-link" href="../Reg_Log_page/login.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="nav-animate"></div>
+    </header>
+
+    <div class="reg_container">
+        <div class="container" >
+            <div class="login">
+                <div class="container">
+                    <a href="../index.html"><img src="../pictures/logo_black.svg" alt="logo" width="600px" /></a>
+                    <h1>Register</h1>
+                    <p>Do you have an account? &nbsp;<a href="login.html">Sign in here</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container2">
+            <div class="register">
+                <div class="container_1">
+                    <form id="registerForm">
+                        <h1 class="sign_up">Sign Up</h1>
+                        <h1 class="description">Create a FREE account now! - ( ๑‾̀◡‾́)&sigma;"</h1>
+                        <img src="../pictures/Reg_Log/register_account.svg" id="icon_register_account">
+                        <input type="text" id="userName" placeholder="Username" maxlength="20" required>
+                        <img src="../pictures/Reg_Log/register_date.svg" id="icon_register_date">
+                        <input type="date" id="birthDate" required onchange="checkAge()">
+                        <img src="../pictures/Reg_Log/email_icon.svg" id="icon_register_Email">
+                        <input type="email" id="email" placeholder="Email" maxlength="50" required>
+                        <img src="../pictures/Reg_Log/password_icon.svg" id="icon_register_password">
+                        <input type="password" id="password" placeholder="Password" maxlength="25" minlength="8"
+                            required>
+                        <img src="../pictures/Reg_Log/password_icon.svg" id="icon_register_password">
+                        <input type="password" id="retypePassword" placeholder="Retype Password" maxlength="25"
+                            required>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="reg_log.js"></script>
+    <script src="../navigation.js"></script>
+</body>
+
+</html>
